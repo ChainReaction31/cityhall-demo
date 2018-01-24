@@ -1,0 +1,494 @@
+2018-01-16 22:06:26.206 [main] INFO  SensorHub - *****************************************
+2018-01-16 22:06:26.208 [main] INFO  SensorHub - Starting SensorHub...
+2018-01-16 22:06:26.223 [main] DEBUG ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] loaded
+2018-01-16 22:06:26.236 [main] DEBUG ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] loaded
+2018-01-16 22:06:26.248 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module INITIALIZING
+2018-01-16 22:06:26.248 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module INITIALIZED
+2018-01-16 22:06:26.248 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module STARTING
+2018-01-16 22:06:26.251 [EventBus-1] INFO  ModuleRegistry - Initializing module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-16 22:06:26.252 [EventBus-2] INFO  ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] initialized
+2018-01-16 22:06:26.254 [EventBus-1] INFO  ModuleRegistry - Starting module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-16 22:06:26.260 [main] DEBUG ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] loaded
+2018-01-16 22:06:26.260 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module INITIALIZING
+2018-01-16 22:06:26.260 [EventBus-1] INFO  ModuleRegistry - Initializing module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97]
+2018-01-16 22:06:26.261 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module INITIALIZED
+2018-01-16 22:06:26.261 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module STARTING
+2018-01-16 22:06:26.261 [EventBus-1] INFO  ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] initialized
+2018-01-16 22:06:26.261 [EventBus-2] INFO  ModuleRegistry - Starting module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97]
+2018-01-16 22:06:26.273 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module INITIALIZING
+2018-01-16 22:06:26.274 [EventBus-2] INFO  ModuleRegistry - Initializing module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6]
+2018-01-16 22:06:26.274 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module INITIALIZED
+2018-01-16 22:06:26.274 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module STARTING
+2018-01-16 22:06:26.274 [EventBus-2] INFO  ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] initialized
+2018-01-16 22:06:26.275 [EventBus-1] INFO  ModuleRegistry - Starting module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6]
+2018-01-16 22:06:26.284 [main] DEBUG ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] loaded
+2018-01-16 22:06:26.287 [main] DEBUG ModuleRegistry - Module 'CityHall Camera Storage' [8d6901d7-7d8a-449a-a61e-c35a96c53f98] loaded
+2018-01-16 22:06:26.290 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZING
+2018-01-16 22:06:26.291 [EventBus-1] INFO  ModuleRegistry - Initializing module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:06:26.294 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-16 22:06:26.295 [main] DEBUG ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] loaded
+2018-01-16 22:06:26.297 [main] DEBUG ModuleRegistry - Module 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080] loaded
+2018-01-16 22:06:26.300 [main] DEBUG ModuleRegistry - Module 'SPS Service' [50101bc9-4fa9-4dc7-bdb6-de76ef4d6c7d] loaded
+2018-01-16 22:06:26.341 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Static resources root is web
+2018-01-16 22:06:26.358 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Servlets root is /sensorhub
+2018-01-16 22:06:26.514 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - HTTP server started on port 8181
+2018-01-16 22:06:26.514 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module STARTED
+2018-01-16 22:06:26.515 [EventBus-3] INFO  ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] started
+2018-01-16 22:06:26.632 [qtp295967174-30] WARN  HttpChannel - /sensorhub/admin/PUSH
+java.lang.NullPointerException: null
+	at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:380)
+	at org.sensorhub.ui.AdminUIServlet.service(AdminUIServlet.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:308)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:262)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:61)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:561)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:334)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:104)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:679)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:597)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-16 22:06:26.689 [EventBus-2] DEBUG HttpServer:e66f0bad - Servlet deployed [/admin/*, /VAADIN/*]=>org.sensorhub.ui.AdminUIServlet-49629da0
+2018-01-16 22:06:26.689 [EventBus-2] INFO  AdminUIModule:7021877e - Module STARTED
+2018-01-16 22:06:26.689 [EventBus-3] INFO  ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] started
+2018-01-16 22:06:27.023 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Connected to Dahua Camera
+2018-01-16 22:06:27.068 [EventBus-1] DEBUG HttpServer:e66f0bad - Servlet deployed [/sos]=>org.sensorhub.impl.service.sos.SOSServlet-1695497e
+2018-01-16 22:06:27.068 [EventBus-1] INFO  SOSService:b7e83555 - Module STARTED
+2018-01-16 22:06:27.069 [EventBus-2] INFO  ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] started
+2018-01-16 22:06:37.138 [qtp295967174-32] INFO  AdminUIModule:7021877e - New connection to admin UI (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:06:41.685 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZED
+2018-01-16 22:06:41.685 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module STARTING
+2018-01-16 22:06:41.686 [EventBus-5] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] initialized
+2018-01-16 22:06:41.687 [EventBus-8] INFO  ModuleRegistry - Starting module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:06:42.063 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Connected to RTSP server
+2018-01-16 22:06:42.066 [ModuleRegistry-2] INFO  RTSPClient - Playing Stream trackID=0 (96 H264/90000)
+2018-01-16 22:06:42.313 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 19910, Dropping frame
+2018-01-16 22:06:42.315 [pool-1-thread-1] INFO  DahuaCameraDriver:fd7e993c - Connected to H264 RTP stream
+2018-01-16 22:06:43.452 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 20198, Dropping frame
+2018-01-16 22:06:48.186 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module STARTED
+2018-01-16 22:06:48.186 [EventBus-4] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] started
+2018-01-16 22:06:48.210 [EventBus-8] DEBUG SOSService:b7e83555 - Offering "urn:osh:cityhall" added for procedure urn:dahua:cam:WT1J033A7PAN00005
+2018-01-16 22:07:12.674 [qtp295967174-26] INFO  AdminUIModule:7021877e - New connection to admin UI (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:07:42.846 [qtp295967174-32] INFO  AdminUIModule:7021877e - New connection to admin UI (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:08:00.409 [qtp295967174-26] INFO  AdminUIModule:7021877e - New connection to admin UI (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:17:48.430 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 168777, Dropping frame
+2018-01-16 22:17:48.430 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 168783, Dropping frame
+2018-01-16 22:18:02.106 [Timer-2] WARN  DahuaCameraDriver:fd7e993c - No frame received in more than 3000ms. Reconnecting...
+2018-01-16 22:18:02.106 [Timer-2] INFO  DahuaCameraDriver:fd7e993c - Disconnected from Dahua Camera
+2018-01-16 22:18:02.108 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Module STOPPING
+2018-01-16 22:18:02.108 [EventBus-11] INFO  ModuleRegistry - Stopping module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:18:02.108 [EventBus-10] DEBUG SOSService:b7e83555 - Offering "urn:osh:cityhall" removed for procedure urn:dahua:cam:WT1J033A7PAN00005
+2018-01-16 22:18:02.108 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Disconnected from H264 RTP stream
+2018-01-16 22:18:07.110 [Thread-39] ERROR DahuaCameraDriver:fd7e993c - Error while disconnecting from RTSP server
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at org.sensorhub.impl.sensor.rtpcam.RTSPClient.parseResponse(RTSPClient.java:306)
+	at org.sensorhub.impl.sensor.rtpcam.RTSPClient.sendRequestAndParseResponse(RTSPClient.java:166)
+	at org.sensorhub.impl.sensor.rtpcam.RTSPClient.teardown(RTSPClient.java:152)
+	at org.sensorhub.impl.sensor.rtpcam.RTPVideoOutput.stop(RTPVideoOutput.java:235)
+	at org.sensorhub.impl.sensor.dahua.DahuaVideoOutput.stop(DahuaVideoOutput.java:92)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.stop(DahuaCameraDriver.java:351)
+	at org.sensorhub.impl.module.AbstractModule.requestStop(AbstractModule.java:477)
+	at org.sensorhub.impl.module.RobustConnection$1.run(RobustConnection.java:176)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-16 22:18:07.110 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Disconnected from RTSP server
+2018-01-16 22:18:07.110 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Module STOPPED
+2018-01-16 22:18:07.110 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Module STARTING
+2018-01-16 22:18:07.110 [EventBus-11] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] stopped
+2018-01-16 22:18:07.111 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-16 22:18:07.111 [EventBus-12] INFO  ModuleRegistry - Starting module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:18:17.113 [Thread-39] ERROR DahuaCameraDriver:fd7e993c - Cannot reach host 172.31.255.1 on port 80
+2018-01-16 22:18:17.113 [Thread-39] ERROR DahuaCameraDriver:fd7e993c - Cannot start module 
+org.sensorhub.api.client.ClientException: Cannot reach host 172.31.255.1 on port 80
+	at org.sensorhub.impl.module.RobustConnection.waitForConnection(RobustConnection.java:106)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.start(DahuaCameraDriver.java:254)
+	at org.sensorhub.impl.module.AbstractModule.requestStart(AbstractModule.java:438)
+	at org.sensorhub.impl.module.RobustConnection$1.run(RobustConnection.java:177)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-16 22:18:17.114 [EventBus-14] ERROR ModuleRegistry - Error in module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:18:17.114 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Module STOPPING
+2018-01-16 22:18:17.114 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Disconnected from RTSP server
+2018-01-16 22:18:17.114 [Thread-39] INFO  DahuaCameraDriver:fd7e993c - Module STOPPED
+2018-01-16 22:18:17.114 [EventBus-13] ERROR ModuleRegistry - Error in module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:18:17.115 [EventBus-14] INFO  ModuleRegistry - Stopping module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:18:17.115 [EventBus-13] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] stopped
+2018-01-16 22:18:23.107 [Timer-3] ERROR DahuaCameraDriver:fd7e993c - Error requesting PTZ status
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.URL.openStream(Unknown Source)
+	at org.sensorhub.impl.sensor.dahua.DahuaPtzOutput.requestPtzStatus(DahuaPtzOutput.java:167)
+	at org.sensorhub.impl.sensor.dahua.DahuaPtzOutput$1.run(DahuaPtzOutput.java:146)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+2018-01-16 22:37:35.023 [qtp295967174-32] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=0:0:0:0:0:0:0:1, user=anonymous)
+2018-01-16 22:37:35.084 [qtp295967174-32] INFO  SOSService:b7e83555 - Registering new sensor urn:osh:client:locationsource:001
+2018-01-16 22:37:35.085 [qtp295967174-32] DEBUG ModuleRegistry - Module 'Location Source' [urn:osh:client:locationsource:001] loaded
+2018-01-16 22:37:35.089 [qtp295967174-32] INFO  SWETransactionalSensor:6904de97 - Module INITIALIZING
+2018-01-16 22:37:35.089 [EventBus-17] INFO  ModuleRegistry - Initializing module 'Location Source' [urn:osh:client:locationsource:001]
+2018-01-16 22:37:35.089 [qtp295967174-32] INFO  SWETransactionalSensor:6904de97 - Module INITIALIZED
+2018-01-16 22:37:35.090 [EventBus-19] INFO  ModuleRegistry - Module 'Location Source' [urn:osh:client:locationsource:001] initialized
+2018-01-16 22:37:35.090 [ModuleRegistry-3] INFO  SWETransactionalSensor:6904de97 - Module STARTING
+2018-01-16 22:37:35.091 [ModuleRegistry-3] INFO  SWETransactionalSensor:6904de97 - Module STARTED
+2018-01-16 22:37:35.091 [EventBus-19] INFO  ModuleRegistry - Starting module 'Location Source' [urn:osh:client:locationsource:001]
+2018-01-16 22:37:35.091 [EventBus-17] INFO  ModuleRegistry - Module 'Location Source' [urn:osh:client:locationsource:001] started
+2018-01-16 22:37:35.092 [qtp295967174-32] DEBUG ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] loaded
+2018-01-16 22:37:35.098 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module INITIALIZING
+2018-01-16 22:37:35.098 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module INITIALIZED
+2018-01-16 22:37:35.098 [EventBus-17] INFO  ModuleRegistry - Initializing module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-16 22:37:35.098 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STARTING
+2018-01-16 22:37:35.098 [EventBus-18] INFO  ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] initialized
+2018-01-16 22:37:35.100 [EventBus-17] INFO  ModuleRegistry - Starting module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-16 22:37:35.703 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STARTED
+2018-01-16 22:37:35.703 [EventBus-19] INFO  ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] started
+2018-01-16 22:37:35.734 [qtp295967174-32] DEBUG SOSService:b7e83555 - Offering "urn:osh:client:locationsource:001-sos" added for procedure urn:osh:client:locationsource:001
+2018-01-16 22:38:21.585 [qtp295967174-60] INFO  AdminUIModule:7021877e - New UI action: Remove Module 'Location Source' [urn:osh:client:locationsource:001] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:38:21.586 [qtp295967174-60] INFO  SWETransactionalSensor:6904de97 - Module STOPPED
+2018-01-16 22:38:21.586 [EventBus-21] INFO  ModuleRegistry - Module 'Location Source' [urn:osh:client:locationsource:001] stopped
+2018-01-16 22:38:21.586 [EventBus-20] INFO  GenericStreamStorage:b51dbc8f - Waiting for data source 'Location Source' [urn:osh:client:locationsource:001]
+2018-01-16 22:38:21.587 [qtp295967174-60] DEBUG ModuleRegistry - Module 'Location Source' [urn:osh:client:locationsource:001] deleted
+2018-01-16 22:38:21.587 [EventBus-22] DEBUG SOSService:b7e83555 - Offering "urn:osh:client:locationsource:001-sos" updated for procedure urn:osh:client:locationsource:001
+2018-01-16 22:40:02.329 [qtp295967174-28] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=0:0:0:0:0:0:0:1, user=anonymous)
+2018-01-16 22:40:02.332 [qtp295967174-28] INFO  SOSService:b7e83555 - Registering new sensor urn:osh:client:locationsource
+2018-01-16 22:40:02.332 [qtp295967174-28] DEBUG ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] loaded
+2018-01-16 22:40:02.337 [qtp295967174-28] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZING
+2018-01-16 22:40:02.337 [qtp295967174-28] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZED
+2018-01-16 22:40:02.337 [EventBus-26] INFO  ModuleRegistry - Initializing module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-16 22:40:02.338 [EventBus-28] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] initialized
+2018-01-16 22:40:02.338 [ModuleRegistry-4] INFO  SWETransactionalSensor:33a036e0 - Module STARTING
+2018-01-16 22:40:02.338 [ModuleRegistry-4] INFO  SWETransactionalSensor:33a036e0 - Module STARTED
+2018-01-16 22:40:02.339 [EventBus-28] INFO  ModuleRegistry - Starting module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-16 22:40:02.339 [qtp295967174-28] DEBUG ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] loaded
+2018-01-16 22:40:02.339 [EventBus-26] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] started
+2018-01-16 22:40:02.344 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module INITIALIZING
+2018-01-16 22:40:02.344 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module INITIALIZED
+2018-01-16 22:40:02.344 [EventBus-26] INFO  ModuleRegistry - Initializing module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-16 22:40:02.344 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module STARTING
+2018-01-16 22:40:02.344 [EventBus-28] INFO  ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] initialized
+2018-01-16 22:40:02.345 [EventBus-26] INFO  ModuleRegistry - Starting module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-16 22:40:02.935 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module STARTED
+2018-01-16 22:40:02.936 [EventBus-26] INFO  ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] started
+2018-01-16 22:40:02.961 [qtp295967174-28] DEBUG SOSService:b7e83555 - Offering "urn:osh:client:locationsource-sos" added for procedure urn:osh:client:locationsource
+2018-01-16 22:40:12.580 [qtp295967174-26] INFO  AdminUIModule:7021877e - New UI action: Stop 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:40:12.580 [ModuleRegistry-4] INFO  DahuaCameraDriver:fd7e993c - Module STOPPING
+2018-01-16 22:40:12.581 [ModuleRegistry-4] INFO  DahuaCameraDriver:fd7e993c - Disconnected from RTSP server
+2018-01-16 22:40:12.581 [ModuleRegistry-4] INFO  DahuaCameraDriver:fd7e993c - Module STOPPED
+2018-01-16 22:40:12.581 [EventBus-29] INFO  ModuleRegistry - Stopping module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:40:12.581 [EventBus-26] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] stopped
+2018-01-16 22:43:39.907 [qtp295967174-26] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=0:0:0:0:0:0:0:1, user=anonymous)
+2018-01-16 22:43:39.930 [qtp295967174-26] DEBUG SOSService:b7e83555 - Offering "urn:osh:client:locationsource-sos" updated for procedure urn:osh:client:locationsource
+2018-01-16 22:45:13.921 [qtp295967174-28] INFO  AdminUIModule:7021877e - New UI action: Remove Module 'Location Task Source' [urn:osh:client:locationsource] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:45:13.921 [qtp295967174-28] INFO  SWETransactionalSensor:33a036e0 - Module STOPPED
+2018-01-16 22:45:13.922 [qtp295967174-28] DEBUG ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] deleted
+2018-01-16 22:45:13.922 [EventBus-32] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] stopped
+2018-01-16 22:45:13.922 [EventBus-33] INFO  GenericStreamStorage:8264bbd8 - Waiting for data source 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-16 22:45:13.923 [EventBus-31] DEBUG SOSService:b7e83555 - Offering "urn:osh:client:locationsource-sos" updated for procedure urn:osh:client:locationsource
+2018-01-16 22:45:19.108 [qtp295967174-32] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=0:0:0:0:0:0:0:1, user=anonymous)
+2018-01-16 22:45:19.110 [qtp295967174-32] INFO  SOSService:b7e83555 - Registering new sensor urn:osh:client:locationsource
+2018-01-16 22:45:19.110 [qtp295967174-32] DEBUG ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] loaded
+2018-01-16 22:45:19.114 [qtp295967174-32] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZING
+2018-01-16 22:45:19.114 [qtp295967174-32] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZED
+2018-01-16 22:45:19.114 [EventBus-30] INFO  ModuleRegistry - Initializing module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-16 22:45:19.114 [EventBus-31] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] initialized
+2018-01-16 22:45:19.115 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module STARTING
+2018-01-16 22:45:19.115 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module STARTED
+2018-01-16 22:45:19.115 [EventBus-31] INFO  ModuleRegistry - Starting module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-16 22:45:19.115 [EventBus-30] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] started
+2018-01-16 22:45:19.545 [EventBus-30] WARN  AsyncEventHandler - STATE_CHANGED Event from SWETransactionalSensor to GenericStreamStorage @ 1516164319115, dispatch delay=430, queue size=1
+2018-01-16 22:45:19.546 [qtp295967174-32] DEBUG SOSService:b7e83555 - Offering "urn:osh:client:locationsource-sos" updated for procedure urn:osh:client:locationsource
+2018-01-16 22:45:19.546 [EventBus-32] WARN  AsyncEventHandler - STATE_CHANGED Event from SWETransactionalSensor to GenericStreamStorage @ 1516164319115, dispatch delay=431, queue size=0
+2018-01-16 22:45:22.755 [qtp295967174-31] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=0:0:0:0:0:0:0:1, user=anonymous)
+2018-01-16 22:45:35.026 [qtp295967174-31] INFO  AdminUIModule:7021877e - New UI action: Start 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:45:35.029 [ModuleRegistry-6] INFO  CamPtzGeoPointingProcess:4a52e10b - Module INITIALIZING
+2018-01-16 22:45:35.029 [EventBus-37] INFO  ModuleRegistry - Initializing module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:45:35.032 [ModuleRegistry-6] INFO  CamPtzGeoPointingProcess:4a52e10b - Module INITIALIZED
+2018-01-16 22:45:35.032 [ModuleRegistry-6] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STARTING
+2018-01-16 22:45:35.032 [EventBus-38] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] initialized
+2018-01-16 22:45:35.032 [EventBus-39] INFO  ModuleRegistry - Starting module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:45:35.077 [ModuleRegistry-6] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STARTED
+2018-01-16 22:45:35.077 [EventBus-38] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] started
+2018-01-16 22:45:40.752 [qtp295967174-28] INFO  AdminUIModule:7021877e - New UI action: Stop 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:45:40.752 [ModuleRegistry-6] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPING
+2018-01-16 22:45:40.752 [EventBus-36] INFO  ModuleRegistry - Stopping module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:45:40.753 [ModuleRegistry-6] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPED
+2018-01-16 22:45:40.754 [EventBus-38] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] stopped
+2018-01-16 22:45:52.220 [qtp295967174-26] INFO  AdminUIModule:7021877e - New UI action: Force Init 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:45:52.221 [ModuleRegistry-7] INFO  DahuaCameraDriver:fd7e993c - Module STOPPING
+2018-01-16 22:45:52.221 [ModuleRegistry-7] INFO  DahuaCameraDriver:fd7e993c - Disconnected from RTSP server
+2018-01-16 22:45:52.221 [ModuleRegistry-7] INFO  DahuaCameraDriver:fd7e993c - Module STOPPED
+2018-01-16 22:45:52.221 [ModuleRegistry-7] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZING
+2018-01-16 22:45:52.222 [ModuleRegistry-7] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-16 22:45:52.222 [EventBus-42] INFO  ModuleRegistry - Stopping module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:45:52.222 [EventBus-43] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] stopped
+2018-01-16 22:45:52.222 [EventBus-42] INFO  ModuleRegistry - Initializing module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:45:52.781 [ModuleRegistry-7] INFO  DahuaCameraDriver:fd7e993c - Connected to Dahua Camera
+2018-01-16 22:45:57.169 [qtp295967174-32] INFO  AdminUIModule:7021877e - New UI action: Start 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:45:57.814 [ModuleRegistry-7] ERROR DahuaCameraDriver:fd7e993c - Cannot initialize module 
+org.sensorhub.api.sensor.SensorException: Cannot read PTZ metadata
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.createPtzInterfaces(DahuaCameraDriver.java:234)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.init(DahuaCameraDriver.java:184)
+	at org.sensorhub.impl.module.AbstractModule.init(AbstractModule.java:396)
+	at org.sensorhub.impl.sensor.AbstractSensorModule.init(AbstractSensorModule.java:125)
+	at org.sensorhub.impl.sensor.AbstractSensorModule.init(AbstractSensorModule.java:79)
+	at org.sensorhub.impl.module.AbstractModule.requestInit(AbstractModule.java:374)
+	at org.sensorhub.impl.module.ModuleRegistry$1.run(ModuleRegistry.java:391)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.createPtzInterfaces(DahuaCameraDriver.java:209)
+	... 11 common frames omitted
+2018-01-16 22:45:57.814 [ModuleRegistry-7] INFO  DahuaCameraDriver:fd7e993c - Module LOADED
+2018-01-16 22:45:57.814 [EventBus-42] ERROR ModuleRegistry - Error in module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:05.073 [qtp295967174-30] INFO  AdminUIModule:7021877e - New UI action: Start 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:46:05.074 [ModuleRegistry-7] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STARTING
+2018-01-16 22:46:05.074 [EventBus-43] INFO  ModuleRegistry - Starting module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:46:05.074 [ModuleRegistry-7] ERROR CamPtzGeoPointingProcess:4a52e10b - Cannot start module 
+org.sensorhub.api.common.SensorHubException: Cannot connect to PTZ camera urn:dahua:cam:WT1J033A7PAN00005
+	at org.sensorhub.process.cam.CamPtzGeoPointingOutput.initSensorControl(CamPtzGeoPointingOutput.java:136)
+	at org.sensorhub.process.cam.CamPtzGeoPointingOutput.start(CamPtzGeoPointingOutput.java:97)
+	at org.sensorhub.process.cam.CamPtzGeoPointingProcess.start(CamPtzGeoPointingProcess.java:166)
+	at org.sensorhub.impl.module.AbstractModule.requestStart(AbstractModule.java:438)
+	at org.sensorhub.impl.module.ModuleRegistry$2.run(ModuleRegistry.java:486)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.sensorhub.api.common.SensorHubException: No PTZ control interface available
+	at org.sensorhub.process.cam.CamPtzGeoPointingOutput.initSensorControl(CamPtzGeoPointingOutput.java:132)
+	... 9 common frames omitted
+2018-01-16 22:46:05.074 [ModuleRegistry-7] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPING
+2018-01-16 22:46:05.074 [EventBus-43] ERROR ModuleRegistry - Error in module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:46:05.075 [ModuleRegistry-7] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPED
+2018-01-16 22:46:05.075 [EventBus-42] INFO  ModuleRegistry - Stopping module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:46:05.075 [EventBus-40] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] stopped
+2018-01-16 22:46:11.749 [qtp295967174-30] INFO  AdminUIModule:7021877e - New UI action: Stop 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:46:11.750 [ModuleRegistry-7] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPING
+2018-01-16 22:46:11.750 [ModuleRegistry-7] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPED
+2018-01-16 22:46:11.750 [EventBus-43] INFO  ModuleRegistry - Stopping module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:46:11.750 [EventBus-40] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] stopped
+2018-01-16 22:46:36.035 [qtp295967174-30] INFO  AdminUIModule:7021877e - New UI action: Force Init 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:46:36.035 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module STOPPING
+2018-01-16 22:46:36.035 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Disconnected from RTSP server
+2018-01-16 22:46:36.035 [ModuleRegistry-9] ERROR DahuaCameraDriver:fd7e993c - Cannot stop module 
+java.lang.NullPointerException: null
+	at org.sensorhub.impl.sensor.dahua.DahuaVideoOutput.stop(DahuaVideoOutput.java:93)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.stop(DahuaCameraDriver.java:351)
+	at org.sensorhub.impl.module.AbstractModule.requestStop(AbstractModule.java:477)
+	at org.sensorhub.impl.module.ModuleRegistry$1.run(ModuleRegistry.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-16 22:46:36.035 [EventBus-47] INFO  ModuleRegistry - Stopping module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:36.036 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZING
+2018-01-16 22:46:36.036 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-16 22:46:36.036 [EventBus-49] ERROR ModuleRegistry - Error in module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:36.036 [EventBus-47] INFO  ModuleRegistry - Initializing module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:38.594 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Connected to Dahua Camera
+2018-01-16 22:46:42.073 [qtp295967174-31] INFO  AdminUIModule:7021877e - New UI action: Start 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:46:43.626 [ModuleRegistry-9] ERROR DahuaCameraDriver:fd7e993c - Cannot initialize module 
+org.sensorhub.api.sensor.SensorException: Cannot read PTZ metadata
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.createPtzInterfaces(DahuaCameraDriver.java:234)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.init(DahuaCameraDriver.java:184)
+	at org.sensorhub.impl.module.AbstractModule.init(AbstractModule.java:396)
+	at org.sensorhub.impl.sensor.AbstractSensorModule.init(AbstractSensorModule.java:125)
+	at org.sensorhub.impl.sensor.AbstractSensorModule.init(AbstractSensorModule.java:79)
+	at org.sensorhub.impl.module.AbstractModule.requestInit(AbstractModule.java:374)
+	at org.sensorhub.impl.module.ModuleRegistry$1.run(ModuleRegistry.java:391)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.createPtzInterfaces(DahuaCameraDriver.java:209)
+	... 11 common frames omitted
+2018-01-16 22:46:43.626 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module LOADED
+2018-01-16 22:46:43.626 [EventBus-46] ERROR ModuleRegistry - Error in module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:47.483 [qtp295967174-32] INFO  AdminUIModule:7021877e - New UI action: Start 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:46:47.483 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZING
+2018-01-16 22:46:47.483 [EventBus-45] INFO  ModuleRegistry - Initializing module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:47.483 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-16 22:46:48.519 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Connected to Dahua Camera
+2018-01-16 22:46:53.550 [ModuleRegistry-9] ERROR DahuaCameraDriver:fd7e993c - Cannot initialize module 
+org.sensorhub.api.sensor.SensorException: Cannot read PTZ metadata
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.createPtzInterfaces(DahuaCameraDriver.java:234)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.init(DahuaCameraDriver.java:184)
+	at org.sensorhub.impl.module.AbstractModule.init(AbstractModule.java:396)
+	at org.sensorhub.impl.sensor.AbstractSensorModule.init(AbstractSensorModule.java:125)
+	at org.sensorhub.impl.sensor.AbstractSensorModule.init(AbstractSensorModule.java:79)
+	at org.sensorhub.impl.module.AbstractModule.requestInit(AbstractModule.java:374)
+	at org.sensorhub.impl.module.ModuleRegistry$2.run(ModuleRegistry.java:477)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.sensorhub.impl.sensor.dahua.DahuaCameraDriver.createPtzInterfaces(DahuaCameraDriver.java:209)
+	... 11 common frames omitted
+2018-01-16 22:46:53.550 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module LOADED
+2018-01-16 22:46:53.550 [EventBus-45] ERROR ModuleRegistry - Error in module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:53.551 [ModuleRegistry-9] ERROR ModuleRegistry - Cannot start module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+org.sensorhub.api.common.SensorHubException: Module must first be initialized
+	at org.sensorhub.impl.module.AbstractModule.canStart(AbstractModule.java:406)
+	at org.sensorhub.impl.module.AbstractModule.requestStart(AbstractModule.java:433)
+	at org.sensorhub.impl.module.ModuleRegistry$2.run(ModuleRegistry.java:486)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-16 22:46:56.870 [qtp295967174-28] INFO  AdminUIModule:7021877e - New UI action: Start 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:46:56.870 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZING
+2018-01-16 22:46:56.871 [EventBus-47] INFO  ModuleRegistry - Initializing module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:46:56.871 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-16 22:46:57.403 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Connected to Dahua Camera
+2018-01-16 22:47:12.136 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZED
+2018-01-16 22:47:12.137 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module STARTING
+2018-01-16 22:47:12.137 [EventBus-53] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] initialized
+2018-01-16 22:47:12.137 [EventBus-52] INFO  ModuleRegistry - Starting module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:47:12.546 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Connected to RTSP server
+2018-01-16 22:47:12.546 [ModuleRegistry-9] INFO  RTSPClient - Playing Stream trackID=0 (96 H264/90000)
+2018-01-16 22:47:12.805 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 52579, Dropping frame
+2018-01-16 22:47:12.805 [pool-4-thread-1] INFO  DahuaCameraDriver:fd7e993c - Connected to H264 RTP stream
+2018-01-16 22:47:12.893 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 52622, Dropping frame
+2018-01-16 22:47:18.565 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module STARTED
+2018-01-16 22:47:18.565 [ModuleRegistry-9] WARN  DahuaCameraDriver:fd7e993c - Module was already started
+2018-01-16 22:47:18.565 [EventBus-52] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] started
+2018-01-16 22:47:18.566 [EventBus-54] DEBUG SOSService:b7e83555 - Offering "urn:osh:cityhall" added for procedure urn:dahua:cam:WT1J033A7PAN00005
+2018-01-16 22:47:20.764 [qtp295967174-61] INFO  AdminUIModule:7021877e - New UI action: restart (from ip=127.0.0.1, user=anonymous)
+2018-01-16 22:47:21.768 [Timer-34] INFO  ModuleRegistry - Module registry shutdown initiated
+2018-01-16 22:47:21.768 [Timer-34] INFO  ModuleRegistry - Stopping all modules (saving config = false, saving state = true)
+2018-01-16 22:47:21.768 [ModuleRegistry-9] INFO  HttpServer:e66f0bad - Module STOPPING
+2018-01-16 22:47:21.768 [EventBus-53] INFO  ModuleRegistry - Stopping module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-16 22:47:21.769 [ModuleRegistry-12] INFO  SOSService:b7e83555 - Module STOPPING
+2018-01-16 22:47:21.769 [ModuleRegistry-11] INFO  AdminUIModule:7021877e - Module STOPPING
+2018-01-16 22:47:21.769 [EventBus-53] INFO  ModuleRegistry - Stopping module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6]
+2018-01-16 22:47:21.769 [ModuleRegistry-12] INFO  SOSService:b7e83555 - Module STOPPED
+2018-01-16 22:47:21.769 [EventBus-54] INFO  ModuleRegistry - Stopping module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97]
+2018-01-16 22:47:21.769 [EventBus-53] INFO  ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] stopped
+2018-01-16 22:47:21.780 [ModuleRegistry-11] INFO  AdminUIModule:7021877e - Module STOPPED
+2018-01-16 22:47:21.780 [ModuleRegistry-9] INFO  HttpServer:e66f0bad - Module STOPPED
+2018-01-16 22:47:21.780 [EventBus-53] INFO  ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] stopped
+2018-01-16 22:47:21.780 [EventBus-52] INFO  ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] stopped
+2018-01-16 22:47:21.786 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module STOPPING
+2018-01-16 22:47:21.786 [ModuleRegistry-12] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPING
+2018-01-16 22:47:21.786 [ModuleRegistry-12] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STOPPED
+2018-01-16 22:47:21.786 [EventBus-53] INFO  ModuleRegistry - Stopping module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-16 22:47:21.787 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Disconnected from H264 RTP stream
+2018-01-16 22:47:21.788 [EventBus-53] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] stopped
+2018-01-16 22:47:21.788 [EventBus-51] INFO  ModuleRegistry - Stopping module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-16 22:47:21.788 [ModuleRegistry-12] INFO  GenericStreamStorage:b51dbc8f - Module STOPPING
+2018-01-16 22:47:21.788 [EventBus-53] INFO  ModuleRegistry - Stopping module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-16 22:47:21.788 [ModuleRegistry-15] INFO  GenericStreamStorage:8264bbd8 - Module STOPPING
+2018-01-16 22:47:21.789 [EventBus-53] INFO  ModuleRegistry - Stopping module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-16 22:47:21.795 [ModuleRegistry-14] INFO  SPSService:95a61cd0 - Module STOPPING
+2018-01-16 22:47:21.795 [ModuleRegistry-11] INFO  GenericStreamStorage:ad8e4d69 - Module STOPPING
+2018-01-16 22:47:21.795 [ModuleRegistry-13] INFO  TargetGeolocProcess:64cf392b - Module STOPPING
+2018-01-16 22:47:21.795 [ModuleRegistry-11] INFO  GenericStreamStorage:ad8e4d69 - Module STOPPED
+2018-01-16 22:47:21.795 [ModuleRegistry-13] INFO  TargetGeolocProcess:64cf392b - Module STOPPED
+2018-01-16 22:47:21.795 [EventBus-52] INFO  ModuleRegistry - Stopping module 'CityHall Camera Storage' [8d6901d7-7d8a-449a-a61e-c35a96c53f98]
+2018-01-16 22:47:21.795 [EventBus-51] INFO  ModuleRegistry - Stopping module 'SPS Service' [50101bc9-4fa9-4dc7-bdb6-de76ef4d6c7d]
+2018-01-16 22:47:21.795 [ModuleRegistry-14] INFO  SPSService:95a61cd0 - Module STOPPED
+2018-01-16 22:47:21.795 [EventBus-53] INFO  ModuleRegistry - Stopping module 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080]
+2018-01-16 22:47:21.795 [EventBus-54] INFO  ModuleRegistry - Module 'CityHall Camera Storage' [8d6901d7-7d8a-449a-a61e-c35a96c53f98] stopped
+2018-01-16 22:47:21.795 [EventBus-51] INFO  ModuleRegistry - Module 'SPS Service' [50101bc9-4fa9-4dc7-bdb6-de76ef4d6c7d] stopped
+2018-01-16 22:47:21.795 [EventBus-51] INFO  ModuleRegistry - Module 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080] stopped
+2018-01-16 22:47:21.847 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Disconnected from RTSP server
+2018-01-16 22:47:21.848 [ModuleRegistry-9] INFO  DahuaCameraDriver:fd7e993c - Module STOPPED
+2018-01-16 22:47:21.848 [EventBus-53] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] stopped
+2018-01-16 22:47:22.026 [ModuleRegistry-9] INFO  SWETransactionalSensor:33a036e0 - Module STOPPING
+2018-01-16 22:47:22.027 [EventBus-51] INFO  ModuleRegistry - Stopping module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-16 22:47:22.027 [ModuleRegistry-9] INFO  SWETransactionalSensor:33a036e0 - Module STOPPED
+2018-01-16 22:47:22.027 [EventBus-51] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] stopped
+2018-01-16 22:47:22.044 [ModuleRegistry-12] INFO  GenericStreamStorage:b51dbc8f - Module STOPPED
+2018-01-16 22:47:22.044 [EventBus-51] INFO  ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] stopped
+2018-01-16 22:47:22.068 [ModuleRegistry-15] INFO  GenericStreamStorage:8264bbd8 - Module STOPPED
+2018-01-16 22:47:22.068 [EventBus-51] INFO  ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] stopped
+2018-01-16 22:47:22.227 [Timer-34] INFO  SensorHub - SensorHub was cleanly stopped

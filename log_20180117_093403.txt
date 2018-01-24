@@ -1,0 +1,153 @@
+2018-01-17 09:34:04.256 [main] INFO  SensorHub - *****************************************
+2018-01-17 09:34:04.258 [main] INFO  SensorHub - Starting SensorHub...
+2018-01-17 09:34:04.271 [main] DEBUG ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] loaded
+2018-01-17 09:34:04.286 [main] DEBUG ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] loaded
+2018-01-17 09:34:04.299 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module INITIALIZING
+2018-01-17 09:34:04.300 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module INITIALIZED
+2018-01-17 09:34:04.300 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module STARTING
+2018-01-17 09:34:04.300 [EventBus-1] INFO  ModuleRegistry - Initializing module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-17 09:34:04.301 [EventBus-2] INFO  ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] initialized
+2018-01-17 09:34:04.303 [EventBus-1] INFO  ModuleRegistry - Starting module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-17 09:34:04.305 [main] DEBUG ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] loaded
+2018-01-17 09:34:04.306 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module INITIALIZING
+2018-01-17 09:34:04.306 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module INITIALIZED
+2018-01-17 09:34:04.306 [EventBus-1] INFO  ModuleRegistry - Initializing module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97]
+2018-01-17 09:34:04.306 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module STARTING
+2018-01-17 09:34:04.306 [EventBus-1] INFO  ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] initialized
+2018-01-17 09:34:04.307 [EventBus-2] INFO  ModuleRegistry - Starting module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97]
+2018-01-17 09:34:04.316 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module INITIALIZING
+2018-01-17 09:34:04.316 [EventBus-2] INFO  ModuleRegistry - Initializing module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6]
+2018-01-17 09:34:04.317 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module INITIALIZED
+2018-01-17 09:34:04.317 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module STARTING
+2018-01-17 09:34:04.317 [EventBus-2] INFO  ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] initialized
+2018-01-17 09:34:04.317 [EventBus-1] INFO  ModuleRegistry - Starting module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6]
+2018-01-17 09:34:04.323 [main] DEBUG ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] loaded
+2018-01-17 09:34:04.326 [main] DEBUG ModuleRegistry - Module 'CityHall Camera Storage' [8d6901d7-7d8a-449a-a61e-c35a96c53f98] loaded
+2018-01-17 09:34:04.327 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZING
+2018-01-17 09:34:04.327 [EventBus-1] INFO  ModuleRegistry - Initializing module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-17 09:34:04.329 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-17 09:34:04.332 [main] DEBUG ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] loaded
+2018-01-17 09:34:04.334 [main] DEBUG ModuleRegistry - Module 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080] loaded
+2018-01-17 09:34:04.337 [main] DEBUG ModuleRegistry - Module 'SPS Service' [50101bc9-4fa9-4dc7-bdb6-de76ef4d6c7d] loaded
+2018-01-17 09:34:04.339 [main] DEBUG ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] loaded
+2018-01-17 09:34:04.339 [main] DEBUG ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] loaded
+2018-01-17 09:34:04.342 [main] DEBUG ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] loaded
+2018-01-17 09:34:04.343 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module INITIALIZING
+2018-01-17 09:34:04.343 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module INITIALIZED
+2018-01-17 09:34:04.343 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module STARTING
+2018-01-17 09:34:04.343 [EventBus-1] INFO  ModuleRegistry - Initializing module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-17 09:34:04.343 [EventBus-2] INFO  ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] initialized
+2018-01-17 09:34:04.344 [EventBus-1] INFO  ModuleRegistry - Starting module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-17 09:34:04.349 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module INITIALIZING
+2018-01-17 09:34:04.349 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module INITIALIZED
+2018-01-17 09:34:04.349 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STARTING
+2018-01-17 09:34:04.349 [EventBus-1] INFO  ModuleRegistry - Initializing module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-17 09:34:04.350 [EventBus-2] INFO  ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] initialized
+2018-01-17 09:34:04.350 [EventBus-1] INFO  ModuleRegistry - Starting module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-17 09:34:04.352 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZING
+2018-01-17 09:34:04.352 [EventBus-1] INFO  ModuleRegistry - Initializing module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-17 09:34:04.365 [ModuleRegistry-4] ERROR GenericStreamStorage:8264bbd8 - Cannot start module 
+org.sensorhub.api.persistence.StorageException: Cannot instantiate underlying storage org.sensorhub.impl.persistence.perst.ObsStorageImpl
+	at org.sensorhub.impl.persistence.GenericStreamStorage.start(GenericStreamStorage.java:114)
+	at org.sensorhub.impl.module.AbstractModule.requestStart(AbstractModule.java:438)
+	at org.sensorhub.impl.module.ModuleRegistry$2.run(ModuleRegistry.java:486)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.sensorhub.api.persistence.StorageException: Error while opening storage Location Task Source Storage
+	at org.sensorhub.impl.persistence.perst.BasicStorageImpl.start(BasicStorageImpl.java:103)
+	at org.sensorhub.impl.persistence.GenericStreamStorage.start(GenericStreamStorage.java:110)
+	... 7 common frames omitted
+Caused by: org.sensorhub.api.persistence.StorageException: Storage file urn_osh_client_locationsource.dat is already locked by the JVM
+	at org.sensorhub.impl.persistence.perst.BasicStorageImpl.start(BasicStorageImpl.java:85)
+	... 8 common frames omitted
+Caused by: org.sensorhub.api.persistence.StorageException: Storage file urn_osh_client_locationsource.dat is already opened by another SensorHub process
+	at org.sensorhub.impl.persistence.perst.BasicStorageImpl.start(BasicStorageImpl.java:81)
+	... 8 common frames omitted
+2018-01-17 09:34:04.366 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module STOPPING
+2018-01-17 09:34:04.366 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module STOPPED
+2018-01-17 09:34:04.366 [EventBus-1] ERROR ModuleRegistry - Error in module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-17 09:34:04.366 [EventBus-2] INFO  ModuleRegistry - Stopping module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-17 09:34:04.366 [EventBus-1] INFO  ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] stopped
+2018-01-17 09:34:04.394 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Static resources root is web
+2018-01-17 09:34:04.415 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Servlets root is /sensorhub
+2018-01-17 09:34:04.425 [ModuleRegistry-3] ERROR GenericStreamStorage:b51dbc8f - Cannot start module 
+org.sensorhub.api.common.SensorHubException: Unknown module urn:osh:client:locationsource:001
+	at org.sensorhub.impl.module.ModuleRegistry.getModuleById(ModuleRegistry.java:792)
+	at org.sensorhub.impl.module.ModuleRegistry.getModuleRef(ModuleRegistry.java:801)
+	at org.sensorhub.impl.persistence.GenericStreamStorage.start(GenericStreamStorage.java:135)
+	at org.sensorhub.impl.module.AbstractModule.requestStart(AbstractModule.java:438)
+	at org.sensorhub.impl.module.ModuleRegistry$2.run(ModuleRegistry.java:486)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2018-01-17 09:34:04.425 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STOPPING
+2018-01-17 09:34:04.425 [EventBus-1] ERROR ModuleRegistry - Error in module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-17 09:34:04.425 [EventBus-2] INFO  ModuleRegistry - Stopping module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-17 09:34:04.425 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STOPPED
+2018-01-17 09:34:04.426 [EventBus-2] INFO  ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] stopped
+2018-01-17 09:34:04.439 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZED
+2018-01-17 09:34:04.439 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module STARTING
+2018-01-17 09:34:04.439 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module STARTED
+2018-01-17 09:34:04.439 [EventBus-2] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] initialized
+2018-01-17 09:34:04.469 [ModuleRegistry-1] ERROR HttpServer:e66f0bad - Cannot start module 
+org.sensorhub.api.common.SensorHubException: Cannot start embedded HTTP server
+	at org.sensorhub.impl.service.HttpServer.start(HttpServer.java:289)
+	at org.sensorhub.impl.module.AbstractModule.requestStart(AbstractModule.java:438)
+	at org.sensorhub.impl.module.ModuleRegistry$2.run(ModuleRegistry.java:486)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:334)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:302)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:238)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:428)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.sensorhub.impl.service.HttpServer.start(HttpServer.java:282)
+	... 7 common frames omitted
+2018-01-17 09:34:04.469 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module STOPPING
+2018-01-17 09:34:04.470 [EventBus-3] ERROR ModuleRegistry - Error in module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-17 09:34:04.470 [EventBus-4] INFO  ModuleRegistry - Stopping module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-17 09:34:04.475 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module STOPPED
+2018-01-17 09:34:04.476 [EventBus-4] INFO  SOSService:b7e83555 - Module STOPPED
+2018-01-17 09:34:04.476 [EventBus-3] INFO  ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] stopped
+2018-01-17 09:34:04.476 [EventBus-1] INFO  AdminUIModule:7021877e - Module STOPPED
+2018-01-17 09:34:04.476 [EventBus-5] INFO  ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] stopped
+2018-01-17 09:34:04.476 [EventBus-6] INFO  ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] stopped
+2018-01-17 09:34:04.545 [EventBus-6] WARN  AsyncEventHandler - STATE_CHANGED Event from SWETransactionalSensor to ModuleRegistry @ 1516203244439, dispatch delay=106, queue size=1
+2018-01-17 09:34:04.546 [EventBus-6] INFO  ModuleRegistry - Starting module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-17 09:34:04.547 [EventBus-2] WARN  AsyncEventHandler - STATE_CHANGED Event from SWETransactionalSensor to ModuleRegistry @ 1516203244439, dispatch delay=108, queue size=0
+2018-01-17 09:34:04.547 [EventBus-2] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] started
+2018-01-17 09:34:05.145 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Connected to Dahua Camera
+2018-01-17 09:34:20.176 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZED
+2018-01-17 09:34:20.176 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module STARTING
+2018-01-17 09:34:20.176 [EventBus-7] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] initialized
+2018-01-17 09:34:20.177 [EventBus-8] INFO  ModuleRegistry - Starting module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-17 09:34:20.539 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Connected to RTSP server
+2018-01-17 09:34:20.541 [ModuleRegistry-2] INFO  RTSPClient - Playing Stream trackID=0 (96 H264/90000)
+2018-01-17 09:34:20.774 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 44338, Dropping frame
+2018-01-17 09:34:20.774 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 44342, Dropping frame
+2018-01-17 09:34:20.776 [pool-1-thread-1] INFO  DahuaCameraDriver:fd7e993c - Connected to H264 RTP stream
+2018-01-17 09:34:21.304 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 44580, Dropping frame
+2018-01-17 09:34:26.964 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module STARTED
+2018-01-17 09:34:26.964 [EventBus-8] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] started
+2018-01-17 09:34:34.555 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 47468, Dropping frame
+2018-01-17 09:35:14.879 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 56488, Dropping frame
+2018-01-17 09:35:14.880 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 56490, Dropping frame
+2018-01-17 09:36:51.218 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 78097, Dropping frame
+2018-01-17 09:37:20.198 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 84576, Dropping frame
+2018-01-17 09:37:26.939 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 86024, Dropping frame
