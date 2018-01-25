@@ -68,7 +68,7 @@ function init() {
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
     //----- TASKERS ----------------------------------------------------------------------------------//
-    var dahua01Taskers = [tasker01.dataSources[1], tasker02.dataSources[1],tasker03.dataSources[0], tasker04.dataSources[1],
+    var dahua01Taskers = [tasker01.dataSources[1], tasker02.dataSources[1],tasker03.dataSources[1], tasker04.dataSources[1],
         tasker05.dataSources[0]];
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
