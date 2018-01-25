@@ -52,8 +52,8 @@ function init() {
     ////// GeoHSV Demo  /////////////////////////////////////////////////////////////////////////////////////////////////
     var tasker01 = addAndroidPhone("mikeNexus5", "Officer Botts 2", "urn:android:device:89845ed469b7edc7-sos", null, 0);
     var tasker02 = addAndroidPhone("ianHtc10", "HTC 10 Cam", "urn:android:device:1aea89f8ebbd4b09-sos", null,0);
-    var tasker03 = addAndroidPhone("ianM8", "HTC M8 Cam", "urn:android:device:bb26ea9abeb8d2c0", null, 0);
-    var tasker04 = addAndroidPhone("bluphone", "BLU Cam", "urn:android:device:c92f9ee08ad5a209", null, 0);
+    var tasker03 = addAndroidPhone("ianM8", "HTC M8 Cam", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
+    var tasker04 = addAndroidPhone("bluphone", "BLU Cam", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
     var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:target");
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
