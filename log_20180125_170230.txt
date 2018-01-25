@@ -1,0 +1,309 @@
+2018-01-25 17:02:30.740 [main] INFO  SensorHub - *****************************************
+2018-01-25 17:02:30.743 [main] INFO  SensorHub - Starting SensorHub...
+2018-01-25 17:02:30.766 [main] DEBUG ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] loaded
+2018-01-25 17:02:30.781 [main] DEBUG ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] loaded
+2018-01-25 17:02:30.797 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module INITIALIZING
+2018-01-25 17:02:30.801 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module INITIALIZING
+2018-01-25 17:02:30.802 [EventBus-1] INFO  ModuleRegistry - Initializing module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-25 17:02:30.802 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module INITIALIZED
+2018-01-25 17:02:30.803 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module STARTING
+2018-01-25 17:02:30.809 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module INITIALIZED
+2018-01-25 17:02:30.809 [ModuleRegistry-2] INFO  AdminUIModule:7021877e - Module STARTING
+2018-01-25 17:02:30.810 [EventBus-2] INFO  ModuleRegistry - Initializing module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97]
+2018-01-25 17:02:30.811 [EventBus-3] INFO  ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] initialized
+2018-01-25 17:02:30.812 [EventBus-1] INFO  ModuleRegistry - Starting module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383]
+2018-01-25 17:02:30.812 [EventBus-4] INFO  ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] initialized
+2018-01-25 17:02:30.813 [EventBus-3] INFO  ModuleRegistry - Starting module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97]
+2018-01-25 17:02:30.820 [main] DEBUG ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] loaded
+2018-01-25 17:02:30.837 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module INITIALIZING
+2018-01-25 17:02:30.838 [EventBus-4] INFO  ModuleRegistry - Initializing module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6]
+2018-01-25 17:02:30.839 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module INITIALIZED
+2018-01-25 17:02:30.846 [EventBus-4] INFO  ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] initialized
+2018-01-25 17:02:30.847 [ModuleRegistry-2] INFO  SOSService:b7e83555 - Module STARTING
+2018-01-25 17:02:30.847 [EventBus-4] INFO  ModuleRegistry - Starting module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6]
+2018-01-25 17:02:30.868 [main] DEBUG ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] loaded
+2018-01-25 17:02:30.883 [main] DEBUG ModuleRegistry - Module 'CityHall Camera Storage' [8d6901d7-7d8a-449a-a61e-c35a96c53f98] loaded
+2018-01-25 17:02:30.896 [main] DEBUG ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] loaded
+2018-01-25 17:02:30.888 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZING
+2018-01-25 17:02:30.903 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Attempting to connect to Dahua Camera (1/1)
+2018-01-25 17:02:30.903 [EventBus-4] INFO  ModuleRegistry - Initializing module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-25 17:02:30.905 [main] DEBUG ModuleRegistry - Module 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080] loaded
+2018-01-25 17:02:30.908 [main] DEBUG ModuleRegistry - Module 'SPS Service' [50101bc9-4fa9-4dc7-bdb6-de76ef4d6c7d] loaded
+2018-01-25 17:02:30.916 [main] DEBUG ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] loaded
+2018-01-25 17:02:30.924 [main] DEBUG ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] loaded
+2018-01-25 17:02:30.937 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module INITIALIZING
+2018-01-25 17:02:30.937 [main] DEBUG ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] loaded
+2018-01-25 17:02:30.938 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module INITIALIZED
+2018-01-25 17:02:30.938 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STARTING
+2018-01-25 17:02:30.938 [EventBus-3] INFO  ModuleRegistry - Initializing module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-25 17:02:30.938 [EventBus-4] INFO  ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] initialized
+2018-01-25 17:02:30.938 [EventBus-3] INFO  ModuleRegistry - Starting module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-25 17:02:30.961 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module INITIALIZING
+2018-01-25 17:02:30.962 [EventBus-3] INFO  ModuleRegistry - Initializing module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-25 17:02:30.962 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module INITIALIZED
+2018-01-25 17:02:30.962 [EventBus-3] INFO  ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] initialized
+2018-01-25 17:02:30.962 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module STARTING
+2018-01-25 17:02:30.962 [EventBus-3] INFO  ModuleRegistry - Starting module 'Location Task Source Storage' [urn:osh:client:locationsource#storage]
+2018-01-25 17:02:30.974 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZING
+2018-01-25 17:02:30.975 [EventBus-3] INFO  ModuleRegistry - Initializing module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-25 17:02:30.985 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module INITIALIZED
+2018-01-25 17:02:30.992 [EventBus-3] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] initialized
+2018-01-25 17:02:30.993 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module STARTING
+2018-01-25 17:02:30.993 [ModuleRegistry-5] INFO  SWETransactionalSensor:33a036e0 - Module STARTED
+2018-01-25 17:02:31.006 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Static resources root is web
+2018-01-25 17:02:31.096 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Servlets root is /sensorhub
+2018-01-25 17:02:31.157 [ModuleRegistry-3] ERROR GenericStreamStorage:b51dbc8f - Cannot start module 
+org.sensorhub.api.common.SensorHubException: Unknown module urn:osh:client:locationsource:001
+	at org.sensorhub.impl.module.ModuleRegistry.getModuleById(ModuleRegistry.java:792)
+	at org.sensorhub.impl.module.ModuleRegistry.getModuleRef(ModuleRegistry.java:801)
+	at org.sensorhub.impl.persistence.GenericStreamStorage.start(GenericStreamStorage.java:135)
+	at org.sensorhub.impl.module.AbstractModule.requestStart(AbstractModule.java:438)
+	at org.sensorhub.impl.module.ModuleRegistry$2.run(ModuleRegistry.java:486)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-25 17:02:31.160 [EventBus-4] ERROR ModuleRegistry - Error in module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-25 17:02:31.161 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STOPPING
+2018-01-25 17:02:31.161 [EventBus-4] INFO  ModuleRegistry - Stopping module 'Location Source Storage' [urn:osh:client:locationsource:001#storage]
+2018-01-25 17:02:31.162 [ModuleRegistry-3] INFO  GenericStreamStorage:b51dbc8f - Module STOPPED
+2018-01-25 17:02:31.162 [EventBus-4] INFO  ModuleRegistry - Module 'Location Source Storage' [urn:osh:client:locationsource:001#storage] stopped
+2018-01-25 17:02:31.194 [ModuleRegistry-4] INFO  GenericStreamStorage:8264bbd8 - Module STARTED
+2018-01-25 17:02:31.195 [EventBus-4] INFO  ModuleRegistry - Module 'Location Task Source Storage' [urn:osh:client:locationsource#storage] started
+2018-01-25 17:02:31.263 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - HTTP server started on port 8282
+2018-01-25 17:02:31.341 [ModuleRegistry-1] INFO  HttpServer:e66f0bad - Module STARTED
+2018-01-25 17:02:31.344 [EventBus-4] INFO  ModuleRegistry - Module 'HTTP Server' [9b357b97-26fd-4216-b597-dccfe6f3e383] started
+2018-01-25 17:02:31.353 [EventBus-4] WARN  AsyncEventHandler - STATE_CHANGED Event from SWETransactionalSensor to ModuleRegistry @ 1516899750993, dispatch delay=360, queue size=1
+2018-01-25 17:02:31.354 [EventBus-4] INFO  ModuleRegistry - Starting module 'Location Task Source' [urn:osh:client:locationsource]
+2018-01-25 17:02:31.355 [EventBus-3] WARN  AsyncEventHandler - STATE_CHANGED Event from SWETransactionalSensor to ModuleRegistry @ 1516899750993, dispatch delay=362, queue size=0
+2018-01-25 17:02:31.356 [EventBus-3] INFO  ModuleRegistry - Module 'Location Task Source' [urn:osh:client:locationsource] started
+2018-01-25 17:02:31.510 [EventBus-2] DEBUG HttpServer:e66f0bad - Servlet deployed [/admin/*, /VAADIN/*]=>org.sensorhub.ui.AdminUIServlet-1c0b8f43
+2018-01-25 17:02:31.511 [EventBus-2] INFO  AdminUIModule:7021877e - Module STARTED
+2018-01-25 17:02:31.511 [EventBus-3] INFO  ModuleRegistry - Module 'Admin UI' [f843291f-a926-43c4-8a49-a6a8ac2f8c97] started
+2018-01-25 17:02:31.708 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Connected to Dahua Camera
+2018-01-25 17:02:31.715 [EventBus-1] DEBUG SOSService:b7e83555 - Offering "urn:osh:client:locationsource-sos" added for procedure urn:osh:client:locationsource
+2018-01-25 17:02:31.734 [EventBus-1] DEBUG HttpServer:e66f0bad - Servlet deployed [/sos]=>org.sensorhub.impl.service.sos.SOSServlet-2d896fa8
+2018-01-25 17:02:31.734 [EventBus-1] INFO  SOSService:b7e83555 - Module STARTED
+2018-01-25 17:02:31.734 [EventBus-2] INFO  ModuleRegistry - Module 'SOS Service' [d1050494-dfc4-4318-8592-530984056cd6] started
+2018-01-25 17:02:44.449 [qtp410453354-22] INFO  AdminUIModule:7021877e - New connection to admin UI (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:02:46.984 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module INITIALIZED
+2018-01-25 17:02:46.985 [EventBus-5] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] initialized
+2018-01-25 17:02:46.985 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module STARTING
+2018-01-25 17:02:46.995 [EventBus-10] INFO  ModuleRegistry - Starting module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa]
+2018-01-25 17:02:47.427 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Connected to RTSP server
+2018-01-25 17:02:47.430 [ModuleRegistry-2] INFO  RTSPClient - Playing Stream trackID=0 (96 H264/90000)
+2018-01-25 17:02:47.672 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 44156, Dropping frame
+2018-01-25 17:02:47.674 [pool-1-thread-1] INFO  DahuaCameraDriver:fd7e993c - Connected to H264 RTP stream
+2018-01-25 17:02:48.929 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 44549, Dropping frame
+2018-01-25 17:02:53.739 [ModuleRegistry-2] INFO  DahuaCameraDriver:fd7e993c - Module STARTED
+2018-01-25 17:02:53.740 [EventBus-10] INFO  ModuleRegistry - Module 'City Hall Camera' [ef2814a2-abfc-4291-9819-dab5c554b6fa] started
+2018-01-25 17:02:53.756 [EventBus-9] DEBUG SOSService:b7e83555 - Offering "urn:osh:cityhall" added for procedure urn:dahua:cam:WT1J033A7PAN00005
+2018-01-25 17:03:00.019 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 46964, Dropping frame
+2018-01-25 17:04:59.723 [qtp410453354-27] INFO  SOSService:b7e83555 - GET /sensorhub/sos?service=SOS&request=GetCapabilities (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:00.095 [qtp410453354-25] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:00.128 [qtp410453354-25] INFO  SOSService:b7e83555 - Registering new sensor urn:android:device:1aea89f8ebbd4b09
+2018-01-25 17:05:00.128 [qtp410453354-25] DEBUG ModuleRegistry - Module 'Android Sensors [HTC10-Ian]' [urn:android:device:1aea89f8ebbd4b09] loaded
+2018-01-25 17:05:00.136 [qtp410453354-25] INFO  SWETransactionalSensor:8801bf25 - Module INITIALIZING
+2018-01-25 17:05:00.139 [qtp410453354-25] INFO  SWETransactionalSensor:8801bf25 - Module INITIALIZED
+2018-01-25 17:05:00.150 [EventBus-12] INFO  ModuleRegistry - Initializing module 'Android Sensors [HTC10-Ian]' [urn:android:device:1aea89f8ebbd4b09]
+2018-01-25 17:05:00.156 [EventBus-13] INFO  ModuleRegistry - Module 'Android Sensors [HTC10-Ian]' [urn:android:device:1aea89f8ebbd4b09] initialized
+2018-01-25 17:05:00.151 [ModuleRegistry-6] INFO  SWETransactionalSensor:8801bf25 - Module STARTING
+2018-01-25 17:05:00.164 [ModuleRegistry-6] INFO  SWETransactionalSensor:8801bf25 - Module STARTED
+2018-01-25 17:05:00.165 [qtp410453354-25] DEBUG ModuleRegistry - Module 'Android Sensors [HTC10-Ian] Storage' [urn:android:device:1aea89f8ebbd4b09#storage] loaded
+2018-01-25 17:05:00.167 [EventBus-13] INFO  ModuleRegistry - Starting module 'Android Sensors [HTC10-Ian]' [urn:android:device:1aea89f8ebbd4b09]
+2018-01-25 17:05:00.167 [EventBus-12] INFO  ModuleRegistry - Module 'Android Sensors [HTC10-Ian]' [urn:android:device:1aea89f8ebbd4b09] started
+2018-01-25 17:05:00.178 [ModuleRegistry-6] INFO  GenericStreamStorage:37302f1d - Module INITIALIZING
+2018-01-25 17:05:00.171 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 73742, Dropping frame
+2018-01-25 17:05:00.179 [ModuleRegistry-6] INFO  GenericStreamStorage:37302f1d - Module INITIALIZED
+2018-01-25 17:05:00.179 [ModuleRegistry-6] INFO  GenericStreamStorage:37302f1d - Module STARTING
+2018-01-25 17:05:00.180 [EventBus-14] INFO  ModuleRegistry - Initializing module 'Android Sensors [HTC10-Ian] Storage' [urn:android:device:1aea89f8ebbd4b09#storage]
+2018-01-25 17:05:00.181 [EventBus-12] INFO  ModuleRegistry - Module 'Android Sensors [HTC10-Ian] Storage' [urn:android:device:1aea89f8ebbd4b09#storage] initialized
+2018-01-25 17:05:00.185 [EventBus-11] INFO  ModuleRegistry - Starting module 'Android Sensors [HTC10-Ian] Storage' [urn:android:device:1aea89f8ebbd4b09#storage]
+2018-01-25 17:05:00.247 [ModuleRegistry-6] INFO  GenericStreamStorage:37302f1d - Module STARTED
+2018-01-25 17:05:00.248 [EventBus-12] INFO  ModuleRegistry - Module 'Android Sensors [HTC10-Ian] Storage' [urn:android:device:1aea89f8ebbd4b09#storage] started
+2018-01-25 17:05:00.272 [qtp410453354-25] DEBUG SOSService:b7e83555 - Offering "urn:android:device:1aea89f8ebbd4b09-sos" added for procedure urn:android:device:1aea89f8ebbd4b09
+2018-01-25 17:05:00.414 [qtp410453354-20] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:00.429 [qtp410453354-20] DEBUG SOSService:b7e83555 - Offering "urn:android:device:1aea89f8ebbd4b09-sos" updated for procedure urn:android:device:1aea89f8ebbd4b09
+2018-01-25 17:05:00.539 [qtp410453354-26] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:00.543 [qtp410453354-26] DEBUG SOSService:b7e83555 - Offering "urn:android:device:1aea89f8ebbd4b09-sos" updated for procedure urn:android:device:1aea89f8ebbd4b09
+2018-01-25 17:05:00.622 [qtp410453354-20] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:00.633 [qtp410453354-24] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3A1aea89f8ebbd4b09%23quat_orientation_data (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:00.726 [qtp410453354-26] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:00.733 [qtp410453354-26] DEBUG SOSService:b7e83555 - Offering "urn:android:device:1aea89f8ebbd4b09-sos" updated for procedure urn:android:device:1aea89f8ebbd4b09
+2018-01-25 17:05:00.793 [qtp410453354-20] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3A1aea89f8ebbd4b09%23camera0_MJPEG (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:05:17.492 [qtp410453354-22] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3A1aea89f8ebbd4b09%23network_data (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:06:59.641 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 100366, Dropping frame
+2018-01-25 17:09:18.381 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 131373, Dropping frame
+2018-01-25 17:10:27.115 [qtp410453354-25] INFO  SOSService:b7e83555 - GET /sensorhub/sos?service=SOS&request=GetCapabilities (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:27.629 [qtp410453354-23] INFO  SOSService:b7e83555 - GET /sensorhub/sos?service=SOS&request=GetCapabilities (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:27.671 [qtp410453354-25] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:27.673 [qtp410453354-25] INFO  SOSService:b7e83555 - Registering new sensor urn:android:device:bb26ea9abeb8d2c0
+2018-01-25 17:10:27.673 [qtp410453354-25] DEBUG ModuleRegistry - Module 'Android Sensors [Ian [HTC-M8]]' [urn:android:device:bb26ea9abeb8d2c0] loaded
+2018-01-25 17:10:27.679 [qtp410453354-25] INFO  SWETransactionalSensor:d052880c - Module INITIALIZING
+2018-01-25 17:10:27.680 [qtp410453354-25] INFO  SWETransactionalSensor:d052880c - Module INITIALIZED
+2018-01-25 17:10:27.681 [EventBus-16] INFO  ModuleRegistry - Initializing module 'Android Sensors [Ian [HTC-M8]]' [urn:android:device:bb26ea9abeb8d2c0]
+2018-01-25 17:10:27.682 [EventBus-17] INFO  ModuleRegistry - Module 'Android Sensors [Ian [HTC-M8]]' [urn:android:device:bb26ea9abeb8d2c0] initialized
+2018-01-25 17:10:27.681 [ModuleRegistry-7] INFO  SWETransactionalSensor:d052880c - Module STARTING
+2018-01-25 17:10:27.688 [ModuleRegistry-7] INFO  SWETransactionalSensor:d052880c - Module STARTED
+2018-01-25 17:10:27.688 [EventBus-15] INFO  ModuleRegistry - Starting module 'Android Sensors [Ian [HTC-M8]]' [urn:android:device:bb26ea9abeb8d2c0]
+2018-01-25 17:10:27.688 [EventBus-16] INFO  ModuleRegistry - Module 'Android Sensors [Ian [HTC-M8]]' [urn:android:device:bb26ea9abeb8d2c0] started
+2018-01-25 17:10:27.688 [qtp410453354-25] DEBUG ModuleRegistry - Module 'Android Sensors [Ian [HTC-M8]] Storage' [urn:android:device:bb26ea9abeb8d2c0#storage] loaded
+2018-01-25 17:10:27.694 [ModuleRegistry-7] INFO  GenericStreamStorage:6ff92104 - Module INITIALIZING
+2018-01-25 17:10:27.695 [ModuleRegistry-7] INFO  GenericStreamStorage:6ff92104 - Module INITIALIZED
+2018-01-25 17:10:27.695 [EventBus-17] INFO  ModuleRegistry - Initializing module 'Android Sensors [Ian [HTC-M8]] Storage' [urn:android:device:bb26ea9abeb8d2c0#storage]
+2018-01-25 17:10:27.695 [ModuleRegistry-7] INFO  GenericStreamStorage:6ff92104 - Module STARTING
+2018-01-25 17:10:27.696 [EventBus-15] INFO  ModuleRegistry - Module 'Android Sensors [Ian [HTC-M8]] Storage' [urn:android:device:bb26ea9abeb8d2c0#storage] initialized
+2018-01-25 17:10:27.697 [EventBus-16] INFO  ModuleRegistry - Starting module 'Android Sensors [Ian [HTC-M8]] Storage' [urn:android:device:bb26ea9abeb8d2c0#storage]
+2018-01-25 17:10:27.721 [ModuleRegistry-7] INFO  GenericStreamStorage:6ff92104 - Module STARTED
+2018-01-25 17:10:27.721 [EventBus-17] INFO  ModuleRegistry - Module 'Android Sensors [Ian [HTC-M8]] Storage' [urn:android:device:bb26ea9abeb8d2c0#storage] started
+2018-01-25 17:10:27.736 [qtp410453354-25] DEBUG SOSService:b7e83555 - Offering "urn:android:device:bb26ea9abeb8d2c0-sos" added for procedure urn:android:device:bb26ea9abeb8d2c0
+2018-01-25 17:10:27.764 [qtp410453354-26] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:27.765 [qtp410453354-26] INFO  SOSService:b7e83555 - Registering new sensor urn:lasertech:trupulse360:bb26ea9abeb8d2c0
+2018-01-25 17:10:27.766 [qtp410453354-26] DEBUG ModuleRegistry - Module 'TruPulse Range Finder [Ian [HTC-M8]]' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0] loaded
+2018-01-25 17:10:27.768 [qtp410453354-26] INFO  SWETransactionalSensor:53ea618d - Module INITIALIZING
+2018-01-25 17:10:27.768 [EventBus-16] INFO  ModuleRegistry - Initializing module 'TruPulse Range Finder [Ian [HTC-M8]]' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0]
+2018-01-25 17:10:27.768 [qtp410453354-26] INFO  SWETransactionalSensor:53ea618d - Module INITIALIZED
+2018-01-25 17:10:27.769 [EventBus-15] INFO  ModuleRegistry - Module 'TruPulse Range Finder [Ian [HTC-M8]]' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0] initialized
+2018-01-25 17:10:27.769 [ModuleRegistry-7] INFO  SWETransactionalSensor:53ea618d - Module STARTING
+2018-01-25 17:10:27.774 [ModuleRegistry-7] INFO  SWETransactionalSensor:53ea618d - Module STARTED
+2018-01-25 17:10:27.774 [EventBus-15] INFO  ModuleRegistry - Starting module 'TruPulse Range Finder [Ian [HTC-M8]]' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0]
+2018-01-25 17:10:27.774 [EventBus-16] INFO  ModuleRegistry - Module 'TruPulse Range Finder [Ian [HTC-M8]]' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0] started
+2018-01-25 17:10:27.774 [qtp410453354-26] DEBUG ModuleRegistry - Module 'TruPulse Range Finder [Ian [HTC-M8]] Storage' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage] loaded
+2018-01-25 17:10:27.777 [ModuleRegistry-7] INFO  GenericStreamStorage:2523e985 - Module INITIALIZING
+2018-01-25 17:10:27.779 [EventBus-17] INFO  ModuleRegistry - Initializing module 'TruPulse Range Finder [Ian [HTC-M8]] Storage' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage]
+2018-01-25 17:10:27.781 [ModuleRegistry-7] INFO  GenericStreamStorage:2523e985 - Module INITIALIZED
+2018-01-25 17:10:27.781 [ModuleRegistry-7] INFO  GenericStreamStorage:2523e985 - Module STARTING
+2018-01-25 17:10:27.782 [EventBus-15] INFO  ModuleRegistry - Module 'TruPulse Range Finder [Ian [HTC-M8]] Storage' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage] initialized
+2018-01-25 17:10:27.783 [EventBus-17] INFO  ModuleRegistry - Starting module 'TruPulse Range Finder [Ian [HTC-M8]] Storage' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage]
+2018-01-25 17:10:27.802 [ModuleRegistry-7] INFO  GenericStreamStorage:2523e985 - Module STARTED
+2018-01-25 17:10:27.802 [EventBus-17] INFO  ModuleRegistry - Module 'TruPulse Range Finder [Ian [HTC-M8]] Storage' [urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage] started
+2018-01-25 17:10:27.819 [qtp410453354-26] DEBUG SOSService:b7e83555 - Offering "urn:lasertech:trupulse360:bb26ea9abeb8d2c0-sos" added for procedure urn:lasertech:trupulse360:bb26ea9abeb8d2c0
+2018-01-25 17:10:27.820 [qtp410453354-87] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:27.840 [qtp410453354-87] DEBUG SOSService:b7e83555 - Offering "urn:android:device:bb26ea9abeb8d2c0-sos" updated for procedure urn:android:device:bb26ea9abeb8d2c0
+2018-01-25 17:10:27.898 [qtp410453354-22] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:27.900 [qtp410453354-22] DEBUG SOSService:b7e83555 - Offering "urn:lasertech:trupulse360:bb26ea9abeb8d2c0-sos" updated for procedure urn:lasertech:trupulse360:bb26ea9abeb8d2c0
+2018-01-25 17:10:27.917 [qtp410453354-24] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:27.920 [qtp410453354-24] DEBUG SOSService:b7e83555 - Offering "urn:android:device:bb26ea9abeb8d2c0-sos" updated for procedure urn:android:device:bb26ea9abeb8d2c0
+2018-01-25 17:10:27.966 [qtp410453354-23] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3Abb26ea9abeb8d2c0%23quat_orientation_data (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:28.000 [qtp410453354-22] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:28.003 [qtp410453354-22] DEBUG SOSService:b7e83555 - Offering "urn:android:device:bb26ea9abeb8d2c0-sos" updated for procedure urn:android:device:bb26ea9abeb8d2c0
+2018-01-25 17:10:28.096 [qtp410453354-27] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3Abb26ea9abeb8d2c0%23camera0_MJPEG (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:10:44.611 [qtp410453354-25] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Alasertech%3Atrupulse360%3Abb26ea9abeb8d2c0%23rangeData (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:11:18.072 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 158049, Dropping frame
+2018-01-25 17:13:17.145 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 184641, Dropping frame
+2018-01-25 17:15:16.722 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 211264, Dropping frame
+2018-01-25 17:15:16.722 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 211268, Dropping frame
+2018-01-25 17:15:17.648 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 211524, Dropping frame
+2018-01-25 17:15:44.613 [qtp410453354-25] ERROR SOSService:b7e83555 - Invalid request: Error in SWE encoded data
+2018-01-25 17:16:23.122 [qtp410453354-27] ERROR SOSService:b7e83555 - Invalid request: Error in SWE encoded data
+2018-01-25 17:17:45.649 [qtp410453354-87] INFO  AdminUIModule:7021877e - New connection to admin UI (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:18:00.574 [qtp410453354-87] INFO  SOSService:b7e83555 - GET /sensorhub/sos?service=SOS&request=GetCapabilities (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:18:01.629 [qtp410453354-607] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:18:01.630 [qtp410453354-607] INFO  SOSService:b7e83555 - Registering new sensor urn:android:device:c92f9ee08ad5a209
+2018-01-25 17:18:01.631 [qtp410453354-607] DEBUG ModuleRegistry - Module 'Android Sensors [BLUPhone]' [urn:android:device:c92f9ee08ad5a209] loaded
+2018-01-25 17:18:01.634 [qtp410453354-607] INFO  SWETransactionalSensor:c795e865 - Module INITIALIZING
+2018-01-25 17:18:01.635 [qtp410453354-607] INFO  SWETransactionalSensor:c795e865 - Module INITIALIZED
+2018-01-25 17:18:01.636 [EventBus-24] INFO  ModuleRegistry - Initializing module 'Android Sensors [BLUPhone]' [urn:android:device:c92f9ee08ad5a209]
+2018-01-25 17:18:01.637 [ModuleRegistry-8] INFO  SWETransactionalSensor:c795e865 - Module STARTING
+2018-01-25 17:18:01.644 [ModuleRegistry-8] INFO  SWETransactionalSensor:c795e865 - Module STARTED
+2018-01-25 17:18:01.644 [qtp410453354-607] DEBUG ModuleRegistry - Module 'Android Sensors [BLUPhone] Storage' [urn:android:device:c92f9ee08ad5a209#storage] loaded
+2018-01-25 17:18:01.645 [EventBus-25] INFO  ModuleRegistry - Module 'Android Sensors [BLUPhone]' [urn:android:device:c92f9ee08ad5a209] initialized
+2018-01-25 17:18:01.651 [EventBus-25] INFO  ModuleRegistry - Starting module 'Android Sensors [BLUPhone]' [urn:android:device:c92f9ee08ad5a209]
+2018-01-25 17:18:01.651 [EventBus-23] INFO  ModuleRegistry - Module 'Android Sensors [BLUPhone]' [urn:android:device:c92f9ee08ad5a209] started
+2018-01-25 17:18:01.655 [ModuleRegistry-8] INFO  GenericStreamStorage:a9a7185d - Module INITIALIZING
+2018-01-25 17:18:01.657 [ModuleRegistry-8] INFO  GenericStreamStorage:a9a7185d - Module INITIALIZED
+2018-01-25 17:18:01.657 [ModuleRegistry-8] INFO  GenericStreamStorage:a9a7185d - Module STARTING
+2018-01-25 17:18:01.657 [EventBus-22] INFO  ModuleRegistry - Initializing module 'Android Sensors [BLUPhone] Storage' [urn:android:device:c92f9ee08ad5a209#storage]
+2018-01-25 17:18:01.658 [EventBus-25] INFO  ModuleRegistry - Module 'Android Sensors [BLUPhone] Storage' [urn:android:device:c92f9ee08ad5a209#storage] initialized
+2018-01-25 17:18:01.658 [EventBus-22] INFO  ModuleRegistry - Starting module 'Android Sensors [BLUPhone] Storage' [urn:android:device:c92f9ee08ad5a209#storage]
+2018-01-25 17:18:01.688 [ModuleRegistry-8] INFO  GenericStreamStorage:a9a7185d - Module STARTED
+2018-01-25 17:18:01.688 [EventBus-23] INFO  ModuleRegistry - Module 'Android Sensors [BLUPhone] Storage' [urn:android:device:c92f9ee08ad5a209#storage] started
+2018-01-25 17:18:01.703 [qtp410453354-607] DEBUG SOSService:b7e83555 - Offering "urn:android:device:c92f9ee08ad5a209-sos" added for procedure urn:android:device:c92f9ee08ad5a209
+2018-01-25 17:18:02.077 [qtp410453354-756] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:18:02.089 [qtp410453354-756] DEBUG SOSService:b7e83555 - Offering "urn:android:device:c92f9ee08ad5a209-sos" updated for procedure urn:android:device:c92f9ee08ad5a209
+2018-01-25 17:18:02.565 [qtp410453354-779] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:18:02.567 [qtp410453354-779] DEBUG SOSService:b7e83555 - Offering "urn:android:device:c92f9ee08ad5a209-sos" updated for procedure urn:android:device:c92f9ee08ad5a209
+2018-01-25 17:18:03.057 [qtp410453354-26] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3Ac92f9ee08ad5a209%23camera0_MJPEG (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:18:50.712 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 258995, Dropping frame
+2018-01-25 17:20:48.790 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 285435, Dropping frame
+2018-01-25 17:21:19.118 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 292202, Dropping frame
+2018-01-25 17:21:54.364 [qtp410453354-25] INFO  SOSService:b7e83555 - GET /sensorhub/sos?service=SOS&request=GetCapabilities (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:21:54.921 [qtp410453354-756] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertSensor (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:21:54.923 [qtp410453354-756] INFO  SOSService:b7e83555 - Registering new sensor urn:android:device:89845ed469b7edc7
+2018-01-25 17:21:54.923 [qtp410453354-756] DEBUG ModuleRegistry - Module 'Android Sensors [Mike's Nexus5]' [urn:android:device:89845ed469b7edc7] loaded
+2018-01-25 17:21:54.927 [qtp410453354-756] INFO  SWETransactionalSensor:c0ac4318 - Module INITIALIZING
+2018-01-25 17:21:54.927 [EventBus-26] INFO  ModuleRegistry - Initializing module 'Android Sensors [Mike's Nexus5]' [urn:android:device:89845ed469b7edc7]
+2018-01-25 17:21:54.928 [qtp410453354-756] INFO  SWETransactionalSensor:c0ac4318 - Module INITIALIZED
+2018-01-25 17:21:54.929 [EventBus-29] INFO  ModuleRegistry - Module 'Android Sensors [Mike's Nexus5]' [urn:android:device:89845ed469b7edc7] initialized
+2018-01-25 17:21:54.931 [ModuleRegistry-9] INFO  SWETransactionalSensor:c0ac4318 - Module STARTING
+2018-01-25 17:21:54.934 [ModuleRegistry-9] INFO  SWETransactionalSensor:c0ac4318 - Module STARTED
+2018-01-25 17:21:54.934 [qtp410453354-756] DEBUG ModuleRegistry - Module 'Android Sensors [Mike's Nexus5] Storage' [urn:android:device:89845ed469b7edc7#storage] loaded
+2018-01-25 17:21:54.935 [EventBus-28] INFO  ModuleRegistry - Starting module 'Android Sensors [Mike's Nexus5]' [urn:android:device:89845ed469b7edc7]
+2018-01-25 17:21:54.935 [EventBus-26] INFO  ModuleRegistry - Module 'Android Sensors [Mike's Nexus5]' [urn:android:device:89845ed469b7edc7] started
+2018-01-25 17:21:54.944 [ModuleRegistry-10] INFO  GenericStreamStorage:e79d1010 - Module INITIALIZING
+2018-01-25 17:21:54.944 [ModuleRegistry-10] INFO  GenericStreamStorage:e79d1010 - Module INITIALIZED
+2018-01-25 17:21:54.944 [ModuleRegistry-10] INFO  GenericStreamStorage:e79d1010 - Module STARTING
+2018-01-25 17:21:54.948 [EventBus-30] INFO  ModuleRegistry - Initializing module 'Android Sensors [Mike's Nexus5] Storage' [urn:android:device:89845ed469b7edc7#storage]
+2018-01-25 17:21:54.949 [EventBus-29] INFO  ModuleRegistry - Module 'Android Sensors [Mike's Nexus5] Storage' [urn:android:device:89845ed469b7edc7#storage] initialized
+2018-01-25 17:21:54.949 [EventBus-30] INFO  ModuleRegistry - Starting module 'Android Sensors [Mike's Nexus5] Storage' [urn:android:device:89845ed469b7edc7#storage]
+2018-01-25 17:21:54.966 [ModuleRegistry-10] INFO  GenericStreamStorage:e79d1010 - Module STARTED
+2018-01-25 17:21:54.966 [EventBus-30] INFO  ModuleRegistry - Module 'Android Sensors [Mike's Nexus5] Storage' [urn:android:device:89845ed469b7edc7#storage] started
+2018-01-25 17:21:54.981 [qtp410453354-756] DEBUG SOSService:b7e83555 - Offering "urn:android:device:89845ed469b7edc7-sos" added for procedure urn:android:device:89845ed469b7edc7
+2018-01-25 17:21:55.040 [qtp410453354-27] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:21:55.055 [qtp410453354-27] DEBUG SOSService:b7e83555 - Offering "urn:android:device:89845ed469b7edc7-sos" updated for procedure urn:android:device:89845ed469b7edc7
+2018-01-25 17:21:55.107 [qtp410453354-25] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:21:55.110 [qtp410453354-25] DEBUG SOSService:b7e83555 - Offering "urn:android:device:89845ed469b7edc7-sos" updated for procedure urn:android:device:89845ed469b7edc7
+2018-01-25 17:21:55.170 [qtp410453354-607] INFO  SOSService:b7e83555 - POST /sensorhub/sos InsertResultTemplate (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:21:55.173 [qtp410453354-607] DEBUG SOSService:b7e83555 - Offering "urn:android:device:89845ed469b7edc7-sos" updated for procedure urn:android:device:89845ed469b7edc7
+2018-01-25 17:21:55.192 [qtp410453354-27] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3A89845ed469b7edc7%23quat_orientation_data (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:21:55.235 [qtp410453354-25] INFO  SOSService:b7e83555 - POST /sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=urn%3Aandroid%3Adevice%3A89845ed469b7edc7%23camera0_MJPEG (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:23:19.253 [qtp410453354-26] ERROR SOSService:b7e83555 - Invalid request: Error in SWE encoded data
+2018-01-25 17:25:18.330 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 345512, Dropping frame
+2018-01-25 17:25:20.899 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 346077, Dropping frame
+2018-01-25 17:25:21.797 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 346333, Dropping frame
+2018-01-25 17:27:06.392 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 369655, Dropping frame
+2018-01-25 17:27:19.302 [qtp410453354-27] ERROR SOSService:b7e83555 - Invalid request: Error in SWE encoded data
+2018-01-25 17:27:19.355 [qtp410453354-25] ERROR SOSService:b7e83555 - Invalid request: Error in SWE encoded data
+2018-01-25 17:30:09.841 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 410570, Dropping frame
+2018-01-25 17:35:19.909 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 479634, Dropping frame
+2018-01-25 17:35:19.909 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 479640, Dropping frame
+2018-01-25 17:35:20.146 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 479766, Dropping frame
+2018-01-25 17:35:23.923 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 480573, Dropping frame
+2018-01-25 17:35:27.036 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 481287, Dropping frame
+2018-01-25 17:39:17.359 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 532718, Dropping frame
+2018-01-25 17:39:26.166 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 534677, Dropping frame
+2018-01-25 17:39:26.225 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 534692, Dropping frame
+2018-01-25 17:41:52.030 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 567232, Dropping frame
+2018-01-25 17:42:03.040 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 569764, Dropping frame
+2018-01-25 17:44:59.946 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 609200, Dropping frame
+2018-01-25 17:45:01.117 [qtp410453354-26] INFO  AdminUIModule:7021877e - New UI action: Start 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:45:01.120 [ModuleRegistry-11] INFO  CamPtzGeoPointingProcess:4a52e10b - Module INITIALIZING
+2018-01-25 17:45:01.123 [EventBus-34] INFO  ModuleRegistry - Initializing module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-25 17:45:01.125 [ModuleRegistry-11] INFO  CamPtzGeoPointingProcess:4a52e10b - Module INITIALIZED
+2018-01-25 17:45:01.125 [ModuleRegistry-11] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STARTING
+2018-01-25 17:45:01.142 [EventBus-37] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] initialized
+2018-01-25 17:45:01.175 [EventBus-38] INFO  ModuleRegistry - Starting module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051]
+2018-01-25 17:45:01.198 [ModuleRegistry-11] INFO  CamPtzGeoPointingProcess:4a52e10b - Module STARTED
+2018-01-25 17:45:01.200 [EventBus-36] INFO  ModuleRegistry - Module 'Camera Geo-Pointing Process' [5cb4569c-9e08-4fa1-1458-fead58900051] started
+2018-01-25 17:45:21.437 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 614039, Dropping frame
+2018-01-25 17:45:21.438 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 614043, Dropping frame
+2018-01-25 17:45:22.904 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 614373, Dropping frame
+2018-01-25 17:45:37.116 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 617559, Dropping frame
+2018-01-25 17:45:37.116 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 617561, Dropping frame
+2018-01-25 17:45:45.523 [qtp410453354-756] INFO  AdminUIModule:7021877e - New UI action: Update Config 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080] (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:45:45.539 [ModuleRegistry-12] INFO  TargetGeolocProcess:64cf392b - Module INITIALIZING
+2018-01-25 17:45:45.542 [EventBus-43] INFO  ModuleRegistry - Initializing module 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080]
+2018-01-25 17:45:45.543 [ModuleRegistry-12] INFO  TargetGeolocProcess:64cf392b - Module INITIALIZED
+2018-01-25 17:45:45.545 [EventBus-42] INFO  ModuleRegistry - Module 'TruPulse Target Geolocation Process' [d2df996d-473f-4ec2-a13e-c79657f4d080] initialized
+2018-01-25 17:45:45.553 [EventBus-41] ERROR AsyncEventHandler - Uncaught exception while dispatching event from TargetGeolocProcess to DefaultModulePanel
+java.lang.NullPointerException: null
+	at org.sensorhub.ui.DefaultModulePanel.handleEvent(DefaultModulePanel.java:286)
+	at org.sensorhub.impl.common.AsyncEventHandler$ListenerQueue$1.run(AsyncEventHandler.java:91)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-25 17:46:06.545 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 624109, Dropping frame
+2018-01-25 17:46:11.386 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 625235, Dropping frame
+2018-01-25 17:46:15.847 [qtp410453354-25] INFO  AdminUIModule:7021877e - New UI action: save_config (from ip=205.201.234.105, user=anonymous)
+2018-01-25 17:46:29.977 [RTPH264Receiver] DEBUG RTPH264Receiver - Lost packet 629358, Dropping frame

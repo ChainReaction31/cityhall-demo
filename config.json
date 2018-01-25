@@ -72,6 +72,56 @@
         "maxFois": 10,
         "Offering ID": "urn:osh:client:locationsource-sos",
         "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:device:1aea89f8ebbd4b09",
+        "storageID": "urn:android:device:1aea89f8ebbd4b09#storage",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 600.0,
+        "maxFois": 10,
+        "Offering ID": "urn:android:device:1aea89f8ebbd4b09-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:device:bb26ea9abeb8d2c0",
+        "storageID": "urn:android:device:bb26ea9abeb8d2c0#storage",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 600.0,
+        "maxFois": 10,
+        "Offering ID": "urn:android:device:bb26ea9abeb8d2c0-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
+        "storageID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 600.0,
+        "maxFois": 10,
+        "Offering ID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:device:c92f9ee08ad5a209",
+        "storageID": "urn:android:device:c92f9ee08ad5a209#storage",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 600.0,
+        "maxFois": 10,
+        "Offering ID": "urn:android:device:c92f9ee08ad5a209-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:device:89845ed469b7edc7",
+        "storageID": "urn:android:device:89845ed469b7edc7#storage",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 600.0,
+        "maxFois": 10,
+        "Offering ID": "urn:android:device:89845ed469b7edc7-sos",
+        "enabled": true
       }
     ],
     "dataConsumers": [
@@ -80,6 +130,41 @@
         "sensorID": "urn:osh:client:locationsource",
         "storageID": "urn:osh:client:locationsource#storage",
         "Offering ID": "urn:osh:client:locationsource-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:device:1aea89f8ebbd4b09",
+        "storageID": "urn:android:device:1aea89f8ebbd4b09#storage",
+        "Offering ID": "urn:android:device:1aea89f8ebbd4b09-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:device:bb26ea9abeb8d2c0",
+        "storageID": "urn:android:device:bb26ea9abeb8d2c0#storage",
+        "Offering ID": "urn:android:device:bb26ea9abeb8d2c0-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
+        "storageID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage",
+        "Offering ID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:device:c92f9ee08ad5a209",
+        "storageID": "urn:android:device:c92f9ee08ad5a209#storage",
+        "Offering ID": "urn:android:device:c92f9ee08ad5a209-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:device:89845ed469b7edc7",
+        "storageID": "urn:android:device:89845ed469b7edc7#storage",
+        "Offering ID": "urn:android:device:89845ed469b7edc7-sos",
         "enabled": true
       }
     ],
@@ -251,7 +336,7 @@
     "dataSources": [
       {
         "objClass": "org.sensorhub.api.processing.StreamingDataSourceConfig",
-        "producerID": "urn:android:device:cac2076d70a6090f",
+        "producerID": "urn:android:device:bb26ea9abeb8d2c0",
         "decimFactor": 0,
         "inputConnections": [
           {
@@ -365,6 +450,131 @@
     "id": "urn:osh:client:locationsource",
     "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
     "name": "Location Task Source",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:android:device:1aea89f8ebbd4b09",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "Android Sensors [HTC10-Ian]",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
+    "storageConfig": {
+      "objClass": "org.sensorhub.impl.persistence.perst.BasicStorageConfig",
+      "storagePath": "urn_android_device_1aea89f8ebbd4b09.dat",
+      "memoryCacheSize": 1024,
+      "objectCacheSize": 100,
+      "moduleClass": "org.sensorhub.impl.persistence.perst.ObsStorageImpl",
+      "autoStart": false
+    },
+    "dataSourceID": "urn:android:device:1aea89f8ebbd4b09",
+    "minCommitPeriod": 10000,
+    "processEvents": true,
+    "id": "urn:android:device:1aea89f8ebbd4b09#storage",
+    "moduleClass": "org.sensorhub.impl.persistence.GenericStreamStorage",
+    "name": "Android Sensors [HTC10-Ian] Storage",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:android:device:bb26ea9abeb8d2c0",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "Android Sensors [Ian [HTC-M8]]",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
+    "storageConfig": {
+      "objClass": "org.sensorhub.impl.persistence.perst.BasicStorageConfig",
+      "storagePath": "urn_android_device_bb26ea9abeb8d2c0.dat",
+      "memoryCacheSize": 1024,
+      "objectCacheSize": 100,
+      "moduleClass": "org.sensorhub.impl.persistence.perst.ObsStorageImpl",
+      "autoStart": false
+    },
+    "dataSourceID": "urn:android:device:bb26ea9abeb8d2c0",
+    "minCommitPeriod": 10000,
+    "processEvents": true,
+    "id": "urn:android:device:bb26ea9abeb8d2c0#storage",
+    "moduleClass": "org.sensorhub.impl.persistence.GenericStreamStorage",
+    "name": "Android Sensors [Ian [HTC-M8]] Storage",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "TruPulse Range Finder [Ian [HTC-M8]]",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
+    "storageConfig": {
+      "objClass": "org.sensorhub.impl.persistence.perst.BasicStorageConfig",
+      "storagePath": "urn_lasertech_trupulse360_bb26ea9abeb8d2c0.dat",
+      "memoryCacheSize": 1024,
+      "objectCacheSize": 100,
+      "moduleClass": "org.sensorhub.impl.persistence.perst.ObsStorageImpl",
+      "autoStart": false
+    },
+    "dataSourceID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
+    "minCommitPeriod": 10000,
+    "processEvents": true,
+    "id": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage",
+    "moduleClass": "org.sensorhub.impl.persistence.GenericStreamStorage",
+    "name": "TruPulse Range Finder [Ian [HTC-M8]] Storage",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:android:device:c92f9ee08ad5a209",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "Android Sensors [BLUPhone]",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
+    "storageConfig": {
+      "objClass": "org.sensorhub.impl.persistence.perst.BasicStorageConfig",
+      "storagePath": "urn_android_device_c92f9ee08ad5a209.dat",
+      "memoryCacheSize": 1024,
+      "objectCacheSize": 100,
+      "moduleClass": "org.sensorhub.impl.persistence.perst.ObsStorageImpl",
+      "autoStart": false
+    },
+    "dataSourceID": "urn:android:device:c92f9ee08ad5a209",
+    "minCommitPeriod": 10000,
+    "processEvents": true,
+    "id": "urn:android:device:c92f9ee08ad5a209#storage",
+    "moduleClass": "org.sensorhub.impl.persistence.GenericStreamStorage",
+    "name": "Android Sensors [BLUPhone] Storage",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
+    "storageConfig": {
+      "objClass": "org.sensorhub.impl.persistence.perst.BasicStorageConfig",
+      "storagePath": "urn_android_device_89845ed469b7edc7.dat",
+      "memoryCacheSize": 1024,
+      "objectCacheSize": 100,
+      "moduleClass": "org.sensorhub.impl.persistence.perst.ObsStorageImpl",
+      "autoStart": false
+    },
+    "dataSourceID": "urn:android:device:89845ed469b7edc7",
+    "minCommitPeriod": 10000,
+    "processEvents": true,
+    "id": "urn:android:device:89845ed469b7edc7#storage",
+    "moduleClass": "org.sensorhub.impl.persistence.GenericStreamStorage",
+    "name": "Android Sensors [Mike's Nexus5] Storage",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:android:device:89845ed469b7edc7",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "Android Sensors [Mike's Nexus5]",
     "autoStart": true
   }
 ]
