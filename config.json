@@ -1,7 +1,7 @@
 [
   {
     "objClass": "org.sensorhub.impl.service.HttpServerConfig",
-    "httpPort": 8383,
+    "httpPort": 8282,
     "httpsPort": 0,
     "staticDocRootUrl": "web",
     "servletsRootUrl": "/sensorhub",
