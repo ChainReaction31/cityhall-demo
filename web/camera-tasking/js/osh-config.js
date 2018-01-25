@@ -50,12 +50,11 @@ function init() {
     // var tasker03 = addAndroidPhone("android01", "Mike's Nexus", "urn:android:device:89845ed469b7edc7-sos", null,0);
 
     ////// GeoHSV Demo  /////////////////////////////////////////////////////////////////////////////////////////////////
-    //var tasker01 = addAndroidPhone("alexNexus5x", "Officer Robin 1", "urn:android:device:cac2076d70a6090f-sos", null,0);
-    var tasker02 = addAndroidPhone("alexNexus5", "Officer Robin 2", "urn:android:device:a0e0eac2fea3f614-sos", null, 0);
-    //var tasker03 = addAndroidPhone("mikePixel", "Officer Botts 1", "urn:android:device:e7e86a0c6539c18a-sos", null,0);
-    var tasker04 = addAndroidPhone("mikeNexus5", "Officer Botts 2", "urn:android:device:89845ed469b7edc7-sos", null, 0);
-    //var tasker05 = addAndroidPhone("ianHtc10", "Officer Patterson", "urn:android:device:1aea89f8ebbd4b09-sos", null,0);
-    var tasker06 = addLRF("mikeLRF", "LRF Target", "urn:lasertech:trupulse360:target");
+    var tasker01 = addAndroidPhone("mikeNexus5", "Officer Botts 2", "urn:android:device:89845ed469b7edc7-sos", null, 0);
+    var tasker02 = addAndroidPhone("ianHtc10", "HTC 10 Cam", "urn:android:device:1aea89f8ebbd4b09-sos", null,0);
+    var tasker03 = addAndroidPhone("ianM8", "HTC M8 Cam", "urn:android:device:bb26ea9abeb8d2c0", null, 0);
+    var tasker04 = addAndroidPhone("bluphone", "BLU Cam", "urn:android:device:c92f9ee08ad5a209", null, 0);
+    var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:target");
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
@@ -64,17 +63,13 @@ function init() {
     //----- PTZ PRESETS ---------------------------------------------------------------------------------------------------------------------//
     // var dahua01Presets = ["Home","Pos1","Pos1Zoom1","Pos2","Pos2Zoom1","Pos2Zoom2","Pos3","Pos3Zoom1","Pos4","Pos4Zoom1","Pos5","Pos5Zoom 1"];
     var dahua01Presets = ["Home", "Pos1", "Pos2", "Pos3", "Pos4", "Pos5"];
-    // var axis01Presets = ["Home","Pos1","Pos2","Pos3"];
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
     //----- TASKERS ----------------------------------------------------------------------------------//
-    // var dahua01Taskers = [tasker01.dataSources[0], tasker02.dataSources[0], tasker03.dataSources[0]];
-    // var dahua01Taskers = [tasker01.dataSources[0]];
-    //var dahua01Taskers = [tasker01.dataSources[1], tasker02.dataSources[1], tasker03.dataSources[1], tasker04.dataSources[1], tasker05.dataSources[1]];
-    var dahua01Taskers = [tasker02.dataSources[1], tasker04.dataSources[1], tasker06.dataSources[0]];
-    // var axis01Taskers = [tasker01.dataSources[0], tasker02.dataSources[0], tasker03.dataSources[0]];
+    var dahua01Taskers = [tasker01.dataSources[1], tasker02.dataSources[1],tasker03.dataSources[0], tasker04.dataSources[1],
+        tasker05.dataSources[0]];
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
 
