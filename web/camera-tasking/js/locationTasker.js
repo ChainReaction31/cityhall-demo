@@ -184,7 +184,7 @@ function makeGetResultWsConnection (offeringId, obsURI) {
   getWs.binaryType = 'arraybuffer';
 
   getWs.onmessage = function(event) {
-    // console.log("getting data from " + offeringId);
+     console.log("getting data from " + offeringId);
     if(readyToSend) {
       // Incoming records are in format [time, lat, lon, alt]
       // So parse incoming record and create new record in format [time, lat, lon, alt, keepZoom]
@@ -203,7 +203,7 @@ function makeGetResultWsConnection (offeringId, obsURI) {
       for (var i = 0; i < eventCharList.length; i++) {
         eventUintArray.push(eventCharList[i].charCodeAt(0)); // Load uintArray with chars from string
       }
-      // console.log("sending " + String.fromCharCode.apply(null, new Uint8Array(new Uint8Array(eventUintArray).buffer)) + " to ws...");
+      //console.log("sending " + String.fromCharCode.apply(null, new Uint8Array(new Uint8Array(eventUintArray).buffer)) + " to ws...");
       insertWs.send(new Uint8Array(eventUintArray).buffer); // send new array buffer to websocket
     }
   }
