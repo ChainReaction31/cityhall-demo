@@ -1,10 +1,11 @@
 var readyToSend = false; // flag to signal insertResult websocket is open
 var clickToTaskEnabled = false; // flag to enable/disable click-to-task
 var keepZoom = false; // flag to enable/disable keep zoom factor when tasking
-var hostName, uid, name, offering, geoProcessId, template, insertWs, getWs;
+var hostName, portNum, uid, name, offering, geoProcessId, template, insertWs, getWs;
 
-function connectToWebSocket (incHostName, incUid, incName) {
+function connectToWebSocket (incHostName,incPortNum, incUid, incName) {
   hostName = incHostName;
+  portNum = incPortNum;
   uid = incUid;
   name = incName;
   sendInsertSensor(); // begin cascade of function calls
@@ -48,7 +49,7 @@ function sendInsertSensor () {
       // alert(this.responseText);
     }
   };
-  xhr.open("POST", 'http://' + hostName + ':8181/sensorhub/sos', true);
+  xhr.open("POST", 'http://' + hostName + ':' + portNum + '/sensorhub/sos', true);
   xhr.setRequestHeader("Content-type", "application/xml");
   xhr.send(xmlSensorRequest);
 }
@@ -143,7 +144,7 @@ function sendInsertTemplate () {
       // alert(this.responseText);
     }
   };
-  xhr.open("POST", 'http://' + hostName + ':8181/sensorhub/sos', true);
+  xhr.open("POST", 'http://' + hostName + ':' + portNum + '/sensorhub/sos', true);
   xhr.setRequestHeader("Content-type", "application/xml");
   xhr.send(xmlTemplateRequest);
 }
@@ -151,7 +152,7 @@ function sendInsertTemplate () {
 function makeInsertResultConnection (){
   console.log("establishing InsertResult ws connection");
   console.log("template = " + template);
-  var insertUrl = 'ws://' + hostName + ':8181/sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=' + encodeURIComponent(template);
+  var insertUrl = 'ws://' + hostName + ':' + portNum + '/sensorhub/sos?service=SOS&version=2.0&request=InsertResult&template=' + encodeURIComponent(template);
   insertWs = new WebSocket(insertUrl);
   insertWs.binaryType = 'arraybuffer';
   insertWs.onopen = function(event) {
@@ -176,7 +177,7 @@ function makeGetResultWsConnection (offeringId, obsURI) {
     ':8181/sensorhub/sos?service=SOS&version=2.0&request=GetResult&offering=' + offeringId +
     '&observedProperty=http://www.opengis.net/def/property/OGC/0/SensorLocation&temporalFilter=phenomenonTime,now/2100-01-01';*/
   var getUrl = 'ws://' + hostName +
-    ':8181/sensorhub/sos?service=SOS&version=2.0&request=GetResult&offering=' + offeringId +
+    ':' + portNum + '/sensorhub/sos?service=SOS&version=2.0&request=GetResult&offering=' + offeringId +
     '&observedProperty=' + obsURI + '&temporalFilter=phenomenonTime,now/2100-01-01';
 
   console.log("making ws connection with " + offeringId);

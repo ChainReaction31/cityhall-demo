@@ -94,7 +94,7 @@ function init() {
 
     // Setup Websocket to SOS-T Location Task Source
     // connectToWebSocket(hostname, uid, name)
-    connectToWebSocket(hostName, "urn:osh:client:locationsource", "Location Task Source");
+    connectToWebSocket(hostName,portNum, "urn:osh:client:locationsource", "Location Task Source");
 
     // add tree and map context menus
     var menuItems = [];
