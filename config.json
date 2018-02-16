@@ -239,7 +239,7 @@
     "connection": {
       "objClass": "org.sensorhub.impl.comm.RobustIPConnectionConfig",
       "checkReachability": true,
-      "connectTimeout": 5000,
+      "connectTimeout": 20000,
       "reconnectPeriod": 10000,
       "reconnectAttempts": 0
     },
@@ -341,14 +341,14 @@
         "inputConnections": [
           {
             "objClass": "org.sensorhub.api.processing.DataSourceConfig$InputLinkConfig",
-            "source": "gps_data",
+            "source": "network_data",
             "destination": "sensorLocation"
           }
         ]
       },
       {
         "objClass": "org.sensorhub.api.processing.StreamingDataSourceConfig",
-        "producerID": "urn:lasertech:trupulse360:cac2076d70a6090f",
+        "producerID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
         "decimFactor": 0,
         "inputConnections": [
           {

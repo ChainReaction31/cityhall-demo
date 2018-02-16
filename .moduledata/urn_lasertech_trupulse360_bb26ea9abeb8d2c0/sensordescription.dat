@@ -4,7 +4,7 @@
   <gml:name>TruPulse Range Finder [Ian [HTC-M8]]</gml:name>
   <sml:validTime>
     <gml:TimePeriod gml:id="T1">
-      <gml:beginPosition>2018-01-25T17:10:27.881Z</gml:beginPosition>
+      <gml:beginPosition>2018-02-16T21:42:45.077Z</gml:beginPosition>
       <gml:endPosition indeterminatePosition="now"/>
     </gml:TimePeriod>
   </sml:validTime>
