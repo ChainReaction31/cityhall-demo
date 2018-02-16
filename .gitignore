@@ -2,3 +2,5 @@
 web/camera-tasking/\.idea/
 config.json.bak.*
 log_*
+
+\.idea/

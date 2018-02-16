@@ -55,6 +55,7 @@ function init() {
     var tasker03 = addAndroidPhone("ianM8", "HTC M8 Cam", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
     var tasker04 = addAndroidPhone("bluphone", "BLU Cam", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
     var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:target");
+    //var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:bb26ea9abeb8d2c0");
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
