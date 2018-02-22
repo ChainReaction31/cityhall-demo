@@ -1,7 +1,7 @@
 function init() {
 
-    var hostName = "botts-geo.com";
-    // var hostName = "localhost";
+    // var hostName = "botts-geo.com";
+    var hostName = "localhost";
     var portNum = 8282;
 
     var startTime = "now";
@@ -55,6 +55,8 @@ function init() {
     var tasker03 = addAndroidPhone("ianM8", "HTC M8 Cam", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
     var tasker04 = addAndroidPhone("bluphone", "BLU Cam", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
     var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:target");
+    //var tasker06 = addGPSTaskSource('Sim GPS 1', 'Sim GPS 1', 'Sim GPS 1', 'urn:osh:sensor:simgps:ccd8d444', null);
+    var tasker06 = addSimGPSTarget("Sim GPS 1", "Sim GPS 1","urn:osh:sensor:simgps:ccd8d444");
     //var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:bb26ea9abeb8d2c0");
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
@@ -70,7 +72,7 @@ function init() {
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
     //----- TASKERS ----------------------------------------------------------------------------------//
     var dahua01Taskers = [tasker01.dataSources[1], tasker02.dataSources[1],tasker03.dataSources[1], tasker04.dataSources[1],
-        tasker05.dataSources[0]];
+        tasker05.dataSources[0], tasker06.dataSources[0]];
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
 
@@ -569,7 +571,7 @@ function init() {
         treeItems.push({
             entity: entity,
             path: "LRF",
-            treeIcon: "images/blue_key.png",
+            treeIcon: "images/gpsSrc24.png",
             contextMenuId: treeMenuId + entity.id
         })
 
@@ -589,7 +591,63 @@ function init() {
                         };
                     }
                 },
-                icon: "images/blue_key.png",
+                icon: "images/gpsSrc24.png",
+                label: entityName
+            })
+        });
+
+        return entity;
+    }
+
+    function addSimGPSTarget(entityID, entityName, offeringID) {
+        // create Data Sources
+        var locationData = new OSH.DataReceiver.LatLonAlt(entityName, {
+            protocol: "ws",
+            service: "SOS",
+            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            offeringID: offeringID,
+            observedProperty: "http://sensorml.com/ont/swe/property/TargetLocation",
+            startTime: startTime,
+            endTime: endTime,
+            replaySpeed: "1",
+            syncMasterTime: sync,
+            bufferingTime: 500,
+            timeOut: dataStreamTimeOut
+        });
+
+        // create entity
+        var entity = {
+            id: entityID,
+            name: entityName,
+            dataSources: [locationData]
+        };
+
+        dataReceiverController.addEntity(entity);
+
+        // Add To Tree
+        treeItems.push({
+            entity: entity,
+            path: "GPS Targets",
+            treeIcon: "images/blue_key.png",
+            contextMenuId: treeMenuId + entity.id
+        });
+
+        // add marker to map
+        mapView.addViewItem({
+            name: entityName,
+            entityId: entity.id,
+            styler: new OSH.UI.Styler.PointMarker({
+                locationFunc: {
+                    dataSourceIds: [locationData.getId()],
+                    handler: function (rec) {
+                        return {
+                            x: rec.lon,
+                            y: rec.lat,
+                            z: rec.alt
+                        };
+                    }
+                },
+                icon: "images/gpsSrc24.png",
                 label: entityName
             })
         });

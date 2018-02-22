@@ -122,6 +122,16 @@
         "maxFois": 10,
         "Offering ID": "urn:android:device:89845ed469b7edc7-sos",
         "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "ccd8d444-09f6-4c77-8ec5-318e3e434a01",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 10.0,
+        "maxFois": 10,
+        "Offering ID": "urn:osh:sensor:simgps:ccd8d444",
+        "name": "Sim GPS 1",
+        "enabled": true
       }
     ],
     "dataConsumers": [
@@ -575,6 +585,19 @@
     "id": "urn:android:device:89845ed469b7edc7",
     "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
     "name": "Android Sensors [Mike's Nexus5]",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.fakegps.FakeGpsConfig",
+    "googleApiUrl": "http://maps.googleapis.com/maps/api/directions/json",
+    "centerLatitude": 34.73,
+    "centerLongitude": -86.585,
+    "areaSize": 0.1,
+    "vehicleSpeed": 20.0,
+    "walkingMode": true,
+    "id": "ccd8d444-09f6-4c77-8ec5-318e3e434a01",
+    "moduleClass": "org.sensorhub.impl.sensor.fakegps.FakeGpsSensor",
+    "name": "Sim GPS 1",
     "autoStart": true
   }
 ]
