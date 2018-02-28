@@ -51,13 +51,14 @@ function init() {
 
     ////// GeoHSV Demo  /////////////////////////////////////////////////////////////////////////////////////////////////
     var tasker01 = addAndroidPhone("mikeNexus5", "Officer Botts 2", "urn:android:device:89845ed469b7edc7-sos", null, 0);
-    var tasker02 = addAndroidPhone("ianHtc10", "HTC 10 Cam", "urn:android:device:1aea89f8ebbd4b09-sos", null,0);
+    var tasker02 = addAndroidPhone("ianHtc10", "HTC 10 Cam", "urn:android:device:1aea89f8ebbd4b09-sos", null, 0);
     var tasker03 = addAndroidPhone("ianM8", "HTC M8 Cam", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
     var tasker04 = addAndroidPhone("bluphone", "BLU Cam", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
     var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:target");
     //var tasker06 = addGPSTaskSource('Sim GPS 1', 'Sim GPS 1', 'Sim GPS 1', 'urn:osh:sensor:simgps:ccd8d444', null);
-    var tasker06 = addSimGPSTarget("Sim GPS 1", "Sim GPS 1","urn:osh:sensor:simgps:ccd8d444");
+    var tasker06 = addSimGPSTarget("Sim GPS 1", "Sim GPS 1", "urn:osh:sensor:simgps:ccd8d444");
     //var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:bb26ea9abeb8d2c0");
+    var cbrnTasker = addSimCBRN("smcbrn", "Sim CBRN 1", "urn:osh:sensor:simcbrn:BIR012345")
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
@@ -71,8 +72,8 @@ function init() {
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
     //----- TASKERS ----------------------------------------------------------------------------------//
-    var dahua01Taskers = [tasker01.dataSources[1], tasker02.dataSources[1],tasker03.dataSources[1], tasker04.dataSources[1],
-        tasker05.dataSources[0], tasker06.dataSources[0]];
+    var dahua01Taskers = [tasker01.dataSources[1], tasker02.dataSources[1], tasker03.dataSources[1], tasker04.dataSources[1],
+        tasker05.dataSources[0], tasker06.dataSources[0], cbrnTasker.dataSources[0]];
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
 
@@ -97,7 +98,7 @@ function init() {
 
     // Setup Websocket to SOS-T Location Task Source
     // connectToWebSocket(hostname, uid, name)
-    connectToWebSocket(hostName,portNum, "urn:osh:client:locationsource", "Location Task Source");
+    connectToWebSocket(hostName, portNum, "urn:osh:client:locationsource", "Location Task Source");
 
     // add tree and map context menus
     var menuItems = [];
@@ -469,7 +470,7 @@ function init() {
 
         var videoView = new OSH.UI.MjpegView(videoDialog.popContentDiv.id, {
             dataSourceId: videoData.getId(),
-            entityId : entity.id,
+            entityId: entity.id,
             css: "video",
             cssSelected: "video-selected",
             keepRatio: true,
@@ -650,6 +651,158 @@ function init() {
                 icon: "images/gpsSrc24.png",
                 label: entityName
             })
+        });
+
+        return entity;
+    }
+
+    function addSimCBRN(entityID, entityName, offeringID) {
+        console.log("Adding Sim CBRNE Sensor");
+
+        // Create Data Sources
+        var locationData = new OSH.DataReceiver.LatLonAlt(entityName, {
+            protocol: "ws",
+            service: "SOS",
+            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            offeringID: offeringID,
+            observedProperty: "http://sensorml.com/ont/swe/property/Location",
+            startTime: startTime,
+            endTime: endTime,
+            replaySpeed: "1",
+            syncMasterTime: sync,
+            bufferingTime: 500,
+            timeOut: dataStreamTimeOut
+        });
+
+        var hazardLevelData = new OSH.DataReceiver.JSON("Alerts", {
+            protocol: "ws",
+            service: "SOS",
+            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            offeringID: offeringID,
+            observedProperty: "http://sensorml.com/ont/swe/property/HazardLevel",
+            startTime: startTime,
+            endTime: endTime,
+            replaySpeed: "1",
+            syncMasterTime: sync,
+            bufferingTime: 60000,
+            timeOut: dataStreamTimeOut
+        });
+
+        var temperatureData = new OSH.DataReceiver.JSON("Temeperature", {
+            protocol: "ws",
+            service: "SOS",
+            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            offeringID: offeringID,
+            observedProperty: "http://sensorml.com/ont/swe/property/Temperature",
+            startTime: startTime,
+            endTime: endTime,
+            replaySpeed: "1",
+            syncMasterTime: sync,
+            bufferingTime: 60000,
+            timeOut: dataStreamTimeOut
+        });
+
+        var numericalLevelData = new OSH.DataReceiver.JSON("Alert Level", {
+            protocol: "ws",
+            service: "SOS",
+            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            offeringID: offeringID,
+            observedProperty: "http://sensorml.com/ont/swe/property/Level",
+            startTime: startTime,
+            endTime: endTime,
+            syncMasterTime: sync,
+            bufferingTime: 1000
+        });
+
+        var continuousLevelData = new OSH.DataReceiver.JSON("Continuous Alert Level", {
+            protocol: "ws",
+            service: "SOS",
+            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            offeringID: offeringID,
+            observedProperty: "http://sensorml.com/ont/swe/property/Continuous",
+            startTime: startTime,
+            endTime: endTime,
+            syncMasterTime: sync,
+            bufferingTime: 1000
+        });
+
+        var pointSourceData = new OSH.DataReceiver.JSON("Source Radii", {
+            protocol: "ws",
+            service: "SOS",
+            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            offeringID: offeringID,
+            observedProperty: "http://sensorml.com/ont/swe/property/PointSource",
+            startTime: startTime,
+            endTime: endTime,
+            syncMasterTime: sync,
+            bufferingTime: 1000
+        });
+
+        // Create Entity
+        var entity = {
+            id: entityID,
+            name: entityName,
+            dataSources: [locationData, hazardLevelData, numericalLevelData, continuousLevelData, temperatureData, pointSourceData]
+        };
+
+        // Add to Entity Tree
+        treeItems.push({
+            entity: entity,
+            path: "CBRNE Sensors",
+            treeIcon: "images/CBRN_Icons/CBRN(Green).png"
+        });
+
+        // Add To Map View
+        mapView.addViewItem({
+            // TODO: Determine why icon is not displaying on map
+            name: entityName,
+            entityId: entityID,
+            styler: new OSH.UI.Styler(
+                {
+                    label: "CBRN",
+                    location:
+                        {
+                            x: 1.42376557,
+                            y: 43.61758626,
+                            z: 100
+                        },
+
+                    locationFunc:
+                        {
+                            dataSourceIds: [locationData.getId()],
+                            handler: function (rec) {
+                                //console.log(rec);
+                                return {
+                                    x: rec.location.lon,
+                                    y: rec.location.lat,
+                                    z: rec.location.alt
+                                };
+                            }
+                        },
+
+                    icon: './images/CBRN_Icons/sphereGreen.glb',
+
+                    iconFunc:
+                        {
+                            dataSourceIds: [hazardLevelData.getId()],
+                            handler: function (rec) {
+                                console.log(String(rec.dataSourceIds[0]).toLowerCase());
+                                if (rec.dataSourceIds[0].toLowerCase() === "none") {
+                                    return 'images/CBRN_Icons/sphereGreen.glb';
+                                }
+                                else if (rec.dataSourceIds[0].toLowerCase() === "low") {
+                                    return 'images/CBRN_Icons/sphereYellow.glb';
+                                }
+                                else if (rec.dataSourceIds[0].toLowerCase() === "medium") {
+                                    return 'images/CBRN_Icons/sphereOrange.glb';
+                                }
+                                else if (rec.dataSourceIds[0].toLowerCase() === "high") {
+                                    return 'images/CBRN_Icons/sphereRed.glb';
+                                }
+                            }
+                        }
+                }),
+            contextMenuId: mapMenuId + entityID
         });
 
         return entity;

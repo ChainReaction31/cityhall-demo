@@ -132,6 +132,16 @@
         "Offering ID": "urn:osh:sensor:simgps:ccd8d444",
         "name": "Sim GPS 1",
         "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "8a645a0a-26d9-4192-9b44-1c14ae884714",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 10.0,
+        "maxFois": 10,
+        "Offering ID": "urn:osh:sensor:simcbrn:BIR012345",
+        "name": "Sim CBRN 1",
+        "enabled": true
       }
     ],
     "dataConsumers": [
@@ -599,5 +609,38 @@
     "moduleClass": "org.sensorhub.impl.sensor.fakegps.FakeGpsSensor",
     "name": "Sim GPS 1",
     "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.simulatedcbrn.SimCBRNConfig",
+    "serialNumber": "BIR012345",
+    "numSources": 1,
+    "googleApiUrl": "http://maps.googleapis.com/maps/api/directions/json",
+    "centerLatitude": 34.7278,
+    "centerLongitude": -86.5887,
+    "areaSize": 0.01,
+    "vehicleSpeed": 10.0,
+    "walkingMode": true,
+    "src1_lat": 34.7278,
+    "src1_lon": -86.5887,
+    "src1_alt": 0.0,
+    "src1_intensity": 600.0,
+    "src1_radius": 1.0,
+    "src1_type": "VX",
+    "src2_lat": 34.728592,
+    "src2_lon": -86.588933,
+    "src2_alt": 0.0,
+    "src2_intensity": 600.0,
+    "src2_radius": 1.0,
+    "src2_type": "VX",
+    "src3_lat": 34.725528,
+    "src3_lon": -86.590242,
+    "src3_alt": 0.0,
+    "src3_intensity": 600.0,
+    "src3_radius": 1.0,
+    "src3_type": "VX",
+    "id": "8a645a0a-26d9-4192-9b44-1c14ae884714",
+    "moduleClass": "org.sensorhub.impl.sensor.simulatedcbrn.SimCBRNSensor",
+    "name": "Sim CBRN 1",
+    "autoStart": false
   }
 ]
