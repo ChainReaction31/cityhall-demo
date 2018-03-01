@@ -1,7 +1,8 @@
 function init() {
 
     // var hostName = "botts-geo.com";
-    var hostName = "localhost";
+    // var hostName = "localhost";
+    var hostName = "207.111.167.133";
     var portNum = 8282;
 
     var startTime = "now";
@@ -609,10 +610,8 @@ function init() {
             observedProperty: "http://www.opengis.net/def/property/OGC/0/SensorLocation",
             startTime: startTime,
             endTime: endTime,
-            replaySpeed: "1",
-            syncMasterTime: sync,
-            bufferingTime: 500,
-            timeOut: dataStreamTimeOut
+            replaySpeed: 1.0,
+            syncMasterTime: sync
         });
 
         // create entity
@@ -647,7 +646,7 @@ function init() {
                         };
                     }
                 },
-                icon: "images/gpsSrc24.png",
+                icon: "images/blue_key.png",
                 label: entityName
             }),
             contextMenuId: mapMenuId + entityID

@@ -590,9 +590,9 @@
   {
     "objClass": "org.sensorhub.impl.sensor.fakegps.FakeGpsConfig",
     "googleApiUrl": "http://maps.googleapis.com/maps/api/directions/json",
-    "centerLatitude": 34.73,
-    "centerLongitude": -86.585,
-    "areaSize": 0.1,
+    "centerLatitude": 34.727322,
+    "centerLongitude": -86.588297,
+    "areaSize": 0.005,
     "vehicleSpeed": 20.0,
     "walkingMode": true,
     "id": "ccd8d444-09f6-4c77-8ec5-318e3e434a01",
