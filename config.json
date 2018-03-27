@@ -265,9 +265,65 @@
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "Home",
-          "pan": 0.0,
-          "tilt": 0.0,
-          "zoom": 0.0
+          "pan": 145.0,
+          "tilt": -8.6,
+          "zoom": 0.058
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "VBC Arena",
+          "pan": 145.0,
+          "tilt": -8.7,
+          "zoom": 0.3
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "Japanese Bridge",
+          "pan": 138.0,
+          "tilt": -13.0,
+          "zoom": 0.183
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "Art Museum",
+          "pan": 184.5,
+          "tilt": -19.0,
+          "zoom": 0.108
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "Parking Deck",
+          "pan": 122.1,
+          "tilt": -12.4,
+          "zoom": 0.192
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "Underpass",
+          "pan": 160.6,
+          "tilt": -8.2,
+          "zoom": 0.32
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "PNC Bank",
+          "pan": 104.7,
+          "tilt": -20.1,
+          "zoom": 0.1
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "I-565 JCT",
+          "pan": 87.2,
+          "tilt": -2.3,
+          "zoom": 0.99
+        },
+        {
+          "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
+          "name": "Rocket",
+          "pan": 130.5,
+          "tilt": -0.3,
+          "zoom": 0.99
         }
       ]
     },
@@ -417,7 +473,7 @@
     "id": "50101bc9-4fa9-4dc7-bdb6-de76ef4d6c7d",
     "moduleClass": "org.sensorhub.impl.service.sps.SPSService",
     "name": "SPS Service",
-    "autoStart": false
+    "autoStart": true
   },
   {
     "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",

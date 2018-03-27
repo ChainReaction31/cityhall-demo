@@ -3,7 +3,7 @@
   <gml:name>Android Sensors [HTC10-Ian]</gml:name>
   <sml:validTime>
     <gml:TimePeriod gml:id="T1">
-      <gml:beginPosition>2018-02-14T20:03:06.212Z</gml:beginPosition>
+      <gml:beginPosition>2018-03-27T18:07:59.667Z</gml:beginPosition>
       <gml:endPosition indeterminatePosition="now"/>
     </gml:TimePeriod>
   </sml:validTime>
@@ -11,8 +11,8 @@
     <sml:FeatureList>
       <sml:feature>
         <sml:Feature gml:id="F1">
-          <gml:identifier codeSpace="uid">urn:android:foi:Run-20180214-140303</gml:identifier>
-          <gml:name>Run-20180214-140303</gml:name>
+          <gml:identifier codeSpace="uid">urn:android:foi:Run-20180327-130736</gml:identifier>
+          <gml:name>Run-20180327-130736</gml:name>
         </sml:Feature>
       </sml:feature>
     </sml:FeatureList>
