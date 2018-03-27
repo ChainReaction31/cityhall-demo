@@ -646,7 +646,8 @@ function init() {
                         };
                     }
                 },
-                icon: "images/blue_key.png",
+                // icon: "images/blue_key.png",
+                icon: "models/GPS_Blue.glb",
                 label: entityName
             }),
             contextMenuId: mapMenuId + entityID
