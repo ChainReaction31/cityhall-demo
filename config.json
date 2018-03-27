@@ -473,7 +473,7 @@
     "id": "50101bc9-4fa9-4dc7-bdb6-de76ef4d6c7d",
     "moduleClass": "org.sensorhub.impl.service.sps.SPSService",
     "name": "SPS Service",
-    "autoStart": true
+    "autoStart": false
   },
   {
     "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
