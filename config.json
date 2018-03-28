@@ -377,6 +377,7 @@
     "cameraMinFocalLength": 4.5,
     "cameraMaxFocalLength": 135.0,
     "cameraSensorSize": 8.47,
+    "cameraZoomScalar": 1.0,
     "desiredViewSize": 60.0,
     "dataSources": [
       {
