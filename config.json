@@ -267,63 +267,63 @@
           "name": "Home",
           "pan": 145.0,
           "tilt": -8.6,
-          "zoom": 0.058
+          "zoom": 6.96
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "VBC_Arena",
           "pan": 145.0,
           "tilt": -8.7,
-          "zoom": 0.3
+          "zoom": 36.0
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "Japanese_Bridge",
           "pan": 138.0,
           "tilt": -13.0,
-          "zoom": 0.183
+          "zoom": 21.96
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "Art_Museum",
           "pan": 184.5,
           "tilt": -19.0,
-          "zoom": 0.108
+          "zoom": 12.96
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "Parking_Deck",
           "pan": 122.1,
           "tilt": -12.4,
-          "zoom": 0.192
+          "zoom": 23.04
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "Underpass",
           "pan": 160.6,
           "tilt": -8.2,
-          "zoom": 0.32
+          "zoom": 38.388
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "PNC_Bank",
           "pan": 104.7,
           "tilt": -20.1,
-          "zoom": 0.1
+          "zoom": 12.0
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "I-565_JCT",
           "pan": 87.2,
           "tilt": -2.3,
-          "zoom": 0.99
+          "zoom": 120.0
         },
         {
           "objClass": "org.sensorhub.impl.sensor.videocam.ptz.PtzPreset",
           "name": "Rocket",
           "pan": 130.5,
-          "tilt": -0.3,
-          "zoom": 0.99
+          "tilt": -0.22,
+          "zoom": 120.0
         }
       ]
     },
