@@ -592,7 +592,8 @@ function init() {
                         };
                     }
                 },
-                icon: "images/gpsSrc24.png",
+                // icon: "images/gpsSrc24.png",
+                icon: "models/GPS_Target.glb",
                 label: entityName
             })
         });
