@@ -95,12 +95,12 @@
       },
       {
         "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
-        "sensorID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09",
-        "storageID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09#storage",
+        "sensorID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
+        "storageID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage",
         "hiddenOutputs": [],
         "liveDataTimeout": 600.0,
         "maxFois": 10,
-        "Offering ID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09-sos",
+        "Offering ID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0-sos",
         "enabled": true
       },
       {
@@ -158,9 +158,9 @@
       },
       {
         "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
-        "sensorID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09",
-        "storageID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09#storage",
-        "Offering ID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09-sos",
+        "sensorID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
+        "storageID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage",
+        "Offering ID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0-sos",
         "enabled": true
       },
       {
@@ -415,7 +415,7 @@
       },
       {
         "objClass": "org.sensorhub.api.processing.StreamingDataSourceConfig",
-        "producerID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09",
+        "producerID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
         "decimFactor": 0,
         "inputConnections": [
           {
@@ -571,7 +571,7 @@
   },
   {
     "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
-    "id": "urn:lasertech:trupulse360:1aea89f8ebbd4b09",
+    "id": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
     "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
     "name": "TruPulse Range Finder [Ian [HTC-M8]]",
     "autoStart": true
@@ -580,16 +580,16 @@
     "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
     "storageConfig": {
       "objClass": "org.sensorhub.impl.persistence.perst.BasicStorageConfig",
-      "storagePath": "urn_lasertech_trupulse360_1aea89f8ebbd4b09.dat",
+      "storagePath": "urn_lasertech_trupulse360_bb26ea9abeb8d2c0.dat",
       "memoryCacheSize": 1024,
       "objectCacheSize": 100,
       "moduleClass": "org.sensorhub.impl.persistence.perst.ObsStorageImpl",
       "autoStart": false
     },
-    "dataSourceID": "urn:lasertech:trupulse360:1aea89f8ebbd4b09",
+    "dataSourceID": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0",
     "minCommitPeriod": 10000,
     "processEvents": true,
-    "id": "urn:lasertech:trupulse360:1aea89f8ebbd4b09#storage",
+    "id": "urn:lasertech:trupulse360:bb26ea9abeb8d2c0#storage",
     "moduleClass": "org.sensorhub.impl.persistence.GenericStreamStorage",
     "name": "TruPulse Range Finder [Ian [HTC-M8]] Storage",
     "autoStart": true
