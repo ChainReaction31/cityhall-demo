@@ -55,9 +55,9 @@ function init() {
     var tasker02 = addAndroidPhone("ianHtc10", "Officer Dies", "urn:android:device:1aea89f8ebbd4b09-sos", null,0);
     var tasker03 = addAndroidPhone("ianM8", "Officer Ocho", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
     var tasker04 = addAndroidPhone("bluphone", "Officer Blu", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
-    var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:target");
+    var tasker05 = addLRF("Laser Range Finder", "LRF Target", "urn:lasertech:trupulse360:target");
     // var tasker06 = addGPSTaskSource('Sim GPS 1', 'Sim GPS 1', 'Sim GPS 1', 'urn:osh:sensor:simgps:ccd8d444', null);
-    var tasker06 = addSimGPSTarget("Sim GPS 1", "Sim GPS 1","urn:osh:sensor:simgps:ccd8d444");
+    var tasker06 = addSimGPSTarget("Officer Sim", "Sim GPS 1","urn:osh:sensor:simgps:ccd8d444");
     //var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:bb26ea9abeb8d2c0");
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
