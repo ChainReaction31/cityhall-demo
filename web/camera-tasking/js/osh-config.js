@@ -51,10 +51,10 @@ function init() {
     // var tasker03 = addAndroidPhone("android01", "Mike's Nexus", "urn:android:device:89845ed469b7edc7-sos", null,0);
 
     ////// GeoHSV Demo  /////////////////////////////////////////////////////////////////////////////////////////////////
-    var tasker01 = addAndroidPhone("mikeNexus5", "Officer Botts 2", "urn:android:device:89845ed469b7edc7-sos", null, 0);
-    var tasker02 = addAndroidPhone("ianHtc10", "HTC 10 Cam", "urn:android:device:1aea89f8ebbd4b09-sos", null,0);
-    var tasker03 = addAndroidPhone("ianM8", "HTC M8 Cam", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
-    var tasker04 = addAndroidPhone("bluphone", "BLU Cam", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
+    var tasker01 = addAndroidPhone("mikeNexus5", "Officer Nexus", "urn:android:device:89845ed469b7edc7-sos", null, 0);
+    var tasker02 = addAndroidPhone("ianHtc10", "Officer Dies", "urn:android:device:1aea89f8ebbd4b09-sos", null,0);
+    var tasker03 = addAndroidPhone("ianM8", "Officer Ocho", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
+    var tasker04 = addAndroidPhone("bluphone", "Officer Blu", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
     var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:target");
     // var tasker06 = addGPSTaskSource('Sim GPS 1', 'Sim GPS 1', 'Sim GPS 1', 'urn:osh:sensor:simgps:ccd8d444', null);
     var tasker06 = addSimGPSTarget("Sim GPS 1", "Sim GPS 1","urn:osh:sensor:simgps:ccd8d444");
