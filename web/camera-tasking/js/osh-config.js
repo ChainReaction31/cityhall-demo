@@ -1,8 +1,8 @@
 function init() {
 
-    // var hostName = "botts-geo.com";
+    var hostName = "botts-geo.com";
     // var hostName = "localhost";
-    var hostName = "207.111.167.133";
+    //var hostName = "207.111.167.133";
     var portNum = 8282;
 
     var startTime = "now";
