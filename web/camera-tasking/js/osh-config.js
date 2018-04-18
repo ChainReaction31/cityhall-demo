@@ -1,13 +1,13 @@
 function init() {
 
-    var hostName = "botts-geo.com";
-    // var hostName = "localhost";
-    // var hostName = "207.111.167.133";
+    var awsHostName = "botts-geo.com";
+    // var awsHostName = "localhost";
+    var hsvHostName = "207.111.167.133";
     var portNum = 8282;
 
     var startTime = "now";
     var endTime = "2100-01-01T20:18:05.451Z";
-    var sync = false;
+    var sync = true;
     var dataStreamTimeOut = 4000;
     var useFFmpegWorkers = true;
 
@@ -43,12 +43,6 @@ function init() {
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
 
-    //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
-    //----- GPS TASKING SOURCES ---------------------------------------------------------------------------------------------//
-    // var tasker01 = addGPSTaskSource("taskSrc1", "GPS Task Source 001", "GPS Target", "urn:osh:sim:gps01-sos", "GPS_Target.glb");
-    // var tasker02 = addGPSTaskSource("taskSrc2", "GPS Task Source 002", "GPS Green", "urn:osh:sim:gps02-sos", "GPS_Green.glb");
-    // var tasker03 = addGPSTaskSource("taskSrc3", "GPS Task Source 003", "GPS Red", "urn:osh:sim:gps03-sos", "GPS_Red.glb");
-    // var tasker03 = addAndroidPhone("android01", "Mike's Nexus", "urn:android:device:89845ed469b7edc7-sos", null,0);
 
     ////// GeoHSV Demo  /////////////////////////////////////////////////////////////////////////////////////////////////
     var tasker01 = addAndroidPhone("mikeNexus5", "Officer Nexus", "urn:android:device:89845ed469b7edc7-sos", null, 0);
@@ -56,16 +50,13 @@ function init() {
     var tasker03 = addAndroidPhone("ianM8", "Officer Ocho", "urn:android:device:bb26ea9abeb8d2c0-sos", null, 0);
     var tasker04 = addAndroidPhone("bluphone", "Officer Blu", "urn:android:device:c92f9ee08ad5a209-sos", null, 0);
     var tasker05 = addLRF("Laser Range Finder", "LRF Target", "urn:lasertech:trupulse360:target");
-    // var tasker06 = addGPSTaskSource('Sim GPS 1', 'Sim GPS 1', 'Sim GPS 1', 'urn:osh:sensor:simgps:ccd8d444', null);
     var tasker06 = addSimGPSTarget("Officer Sim", "Sim GPS 1","urn:osh:sensor:simgps:ccd8d444");
-    //var tasker05 = addLRF("LRF", "LRF Target", "urn:lasertech:trupulse360:bb26ea9abeb8d2c0");
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
     //----- PTZ PRESETS ---------------------------------------------------------------------------------------------------------------------//
-    // var dahua01Presets = ["Home","Pos1","Pos1Zoom1","Pos2","Pos2Zoom1","Pos2Zoom2","Pos3","Pos3Zoom1","Pos4","Pos4Zoom1","Pos5","Pos5Zoom 1"];
     var dahua01Presets = ["Home", "VBC_Arena", "Japanese_Bridge", "Art_Museum", "Parking_Deck", "Underpass", "PNC_Bank", "I-565_JCT", "Rocket"];
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
@@ -77,28 +68,19 @@ function init() {
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
 
+    /* TODO: verify that
+    1. The spsId is correct
+    2. The Heading Offset is where we want it
+     */
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
     //----- PTZ CAMS ------------------------------------------------------------------------------------------------------------------------------------//
-    // addDahuaCam(entityID, entityName, offeringID, spsID, headingOffset, dahuaPresets, dahuaTaskers, rotDir)
-
-    //addDahuaCam("dahua01", "Dahua PTZ 01", "urn:cityhall:dahua:01-sos", "urn:dahua:cam:WT1J033A7PAN00005", 24.0, dahua01Presets, dahua01Taskers, -1.0);
-    // addDahuaCam("dahua02", "Dahua PTZ 02", "urn:office:dahua:02-sos", "urn:dahua:cam:1G0215CGAK00046", 24.0, dahua02Presets, dahua02Taskers, -1.0);
     addDahuaCam("dahua02", "Dahua PTZ 02", "urn:osh:cityhall", "urn:dahua:cam:WT1J033A7PAN00005", 24.0, dahua01Presets, dahua01Taskers, -1.0);
-    // addAxisCam("axis01", "Axis PTZ 01", "urn:office:axis:01-sos", "urn:axis:cam:00408CB95A55", 0.0, axis01Presets, axis01Taskers)
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
-
-    //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
-    //----- ANDROID PHONES ---------------------------------------------------------------------------------------//
-    // addAndroidPhone(entityID, entityName, offeringID, flirOfferingID, headingOffset)
-
-    // var tasker03 = addAndroidPhone("android01", "Mike's Nexus", "urn:android:device:89845ed469b7edc7-sos", null,0);
-    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
-
-
     // Setup Websocket to SOS-T Location Task Source
-    // connectToWebSocket(hostname, uid, name)
-    connectToWebSocket(hostName,portNum, "urn:osh:client:locationsource", "Location Task Source");
+    // connectToWebSocket(awsHostName, uid, name)
+    // TODO: if locationsource fails to work properly it may need to be set to run on the HSV instance
+    connectToWebSocket(awsHostName,portNum, "urn:osh:client:locationsource", "Location Task Source");
 
     // add tree and map context menus
     var menuItems = [];
@@ -129,13 +111,13 @@ function init() {
         var gpsSource = new OSH.DataReceiver.LatLonAlt(taskerName, {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: awsHostName + ":" + portNum + "/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://www.opengis.net/def/property/OGC/0/SensorLocation",
             startTime: startTime,
             endTime: endTime,
             replaySpeed: 1.0,
-            syncMasterTime: true
+            syncMasterTime: sync
         });
 
         var entity = {
@@ -183,7 +165,7 @@ function init() {
         var videoDataSource = new OSH.DataReceiver.VideoH264("H264 video", {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: hsvHostName + ":" + portNum + "/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://sensorml.com/ont/swe/property/VideoFrame",
             startTime: startTime,
@@ -217,7 +199,7 @@ function init() {
             protocol: "http",
             service: "SPS",
             version: "2.0",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sps",
+            endpointUrl: hsvHostName + ":" + portNum + "/sensorhub/sps",
             offeringID: spsID
         });
 
@@ -233,7 +215,7 @@ function init() {
         var locationData = new OSH.DataReceiver.LatLonAlt("Location", {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: hsvHostName + ":" + portNum + "/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://www.opengis.net/def/property/OGC/0/SensorLocation",
             startTime: startTime,
@@ -247,7 +229,7 @@ function init() {
         var headingData = new OSH.DataReceiver.EulerOrientation("Orientation", {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: hsvHostName + ":" + portNum + "/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://sensorml.com/ont/swe/property/Pan",
             startTime: startTime,
@@ -334,7 +316,7 @@ function init() {
         var videoData = new OSH.DataReceiver.VideoMjpeg("Video", {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: awsHostName + ":" + portNum + "/sensorhub/sos",
             // endpointUrl: "botts-geo.com" + ":"+ portNum + "/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://sensorml.com/ont/swe/property/VideoFrame",
@@ -350,7 +332,7 @@ function init() {
         var locationData = new OSH.DataReceiver.LatLonAlt(entityName, {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: awsHostName + ":" + portNum + "/sensorhub/sos",
             // endpointUrl: "botts-geo.com" + ":" + portNum + "/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://sensorml.com/ont/swe/property/Location",
@@ -365,7 +347,7 @@ function init() {
         var attitudeData = new OSH.DataReceiver.OrientationQuaternion("Orientation", {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: awsHostName + ":" + portNum + "/sensorhub/sos",
             // endpointUrl: "botts-geo.com" + ":8181/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://sensorml.com/ont/swe/property/OrientationQuaternion",
@@ -382,7 +364,7 @@ function init() {
             flirVideo = new OSH.DataReceiver.VideoMjpeg("FLIR Video", {
                 protocol: "ws",
                 service: "SOS",
-                endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+                endpointUrl: awsHostName + ":" + portNum + "/sensorhub/sos",
                 // endpointUrl: "botts-geo.com" + ":8181/sensorhub/sos",
                 offeringID: flirOfferingID,
                 observedProperty: "http://sensorml.com/ont/swe/property/VideoFrame",
@@ -547,7 +529,7 @@ function init() {
         var locationData = new OSH.DataReceiver.LatLonAlt(entityName, {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: awsHostName + ":" + portNum + "/sensorhub/sos",
             // endpointUrl: "botts-geo.com" + ":8181/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://sensorml.com/ont/swe/property/TargetLocation",
@@ -606,7 +588,7 @@ function init() {
         var locationData = new OSH.DataReceiver.LatLonAlt(entityName, {
             protocol: "ws",
             service: "SOS",
-            endpointUrl: hostName + ":" + portNum + "/sensorhub/sos",
+            endpointUrl: awsHostName + ":" + portNum + "/sensorhub/sos",
             offeringID: offeringID,
             observedProperty: "http://www.opengis.net/def/property/OGC/0/SensorLocation",
             startTime: startTime,
