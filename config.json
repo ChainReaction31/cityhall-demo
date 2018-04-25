@@ -132,6 +132,16 @@
         "Offering ID": "urn:osh:sensor:simgps:ccd8d444",
         "name": "Sim GPS 1",
         "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:device:6dd3c5ada48803cc",
+        "storageID": "urn:android:device:6dd3c5ada48803cc#storage",
+        "hiddenOutputs": [],
+        "liveDataTimeout": 600.0,
+        "maxFois": 10,
+        "Offering ID": "urn:android:device:6dd3c5ada48803cc-sos",
+        "enabled": true
       }
     ],
     "dataConsumers": [
@@ -175,6 +185,13 @@
         "sensorID": "urn:android:device:89845ed469b7edc7",
         "storageID": "urn:android:device:89845ed469b7edc7#storage",
         "Offering ID": "urn:android:device:89845ed469b7edc7-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:device:6dd3c5ada48803cc",
+        "storageID": "urn:android:device:6dd3c5ada48803cc#storage",
+        "Offering ID": "urn:android:device:6dd3c5ada48803cc-sos",
         "enabled": true
       }
     ],
@@ -655,6 +672,31 @@
     "id": "ccd8d444-09f6-4c77-8ec5-318e3e434a01",
     "moduleClass": "org.sensorhub.impl.sensor.fakegps.FakeGpsSensor",
     "name": "Sim GPS 1",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.persistence.StreamStorageConfig",
+    "storageConfig": {
+      "objClass": "org.sensorhub.impl.persistence.perst.BasicStorageConfig",
+      "storagePath": "urn_android_device_6dd3c5ada48803cc.dat",
+      "memoryCacheSize": 1024,
+      "objectCacheSize": 100,
+      "moduleClass": "org.sensorhub.impl.persistence.perst.ObsStorageImpl",
+      "autoStart": false
+    },
+    "dataSourceID": "urn:android:device:6dd3c5ada48803cc",
+    "minCommitPeriod": 10000,
+    "processEvents": true,
+    "id": "urn:android:device:6dd3c5ada48803cc#storage",
+    "moduleClass": "org.sensorhub.impl.persistence.GenericStreamStorage",
+    "name": "Android Sensors [S9+ 8.0] Storage",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:android:device:6dd3c5ada48803cc",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "Android Sensors [S9+ 8.0]",
     "autoStart": true
   }
 ]
