@@ -2,7 +2,8 @@ function init() {
 
     var awsHostName = "botts-geo.com";
     // var awsHostName = "localhost";
-    var hsvHostName = "207.111.167.133";
+    // var hsvHostName = "207.111.167.133";
+    var hsvHostName = "172.31.255.1";
     var portNum = 8282;
 
     var startTime = "now";
