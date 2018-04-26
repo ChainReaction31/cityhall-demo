@@ -81,7 +81,7 @@ function init() {
     // Setup Websocket to SOS-T Location Task Source
     // connectToWebSocket(awsHostName, uid, name)
     // TODO: if locationsource fails to work properly it may need to be set to run on the HSV instance
-    connectToWebSocket(awsHostName,portNum, "urn:osh:client:locationsource", "Location Task Source");
+    connectToWebSocket(hsvHostName,portNum, "urn:osh:client:locationsource", "Location Task Source");
 
     // add tree and map context menus
     var menuItems = [];
